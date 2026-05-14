@@ -2,54 +2,61 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 1. Конфигурация веб-страницы (минималистичный стиль)
+# 1. Конфигурация веб-страницы
 st.set_page_config(
     page_title="Pulsar Data Visualization",
     layout="centered"
 )
 
-# Строгие академические заголовки
+# Строгие заголовки в начале страницы
 st.title("Радиоизлучение пульсаров")
 st.caption("Генеративная визуализация профилей сигналов на основе стохастического шума.")
 
-# 2. Панель управления параметрами (человеческий дизайн)
-st.sidebar.markdown("### Параметры графики")
+# Заглушка для динамического вывода графика (будет отрисован выше настроек)
+plot_placeholder = st.empty()
 
-num_pulses = st.sidebar.slider(
-    "Количество линий (профилей)", 
-    min_value=10, 
-    max_value=80, 
-    value=40, 
-    step=5
-)
+st.markdown("---")
+st.markdown("### Параметры графики")
 
-line_width = st.sidebar.slider(
-    "Толщина линий (pt)", 
-    min_value=0.5, 
-    max_value=3.0, 
-    value=1.6, 
-    step=0.1
-)
+# 2. Нижняя панель управления: разделение на 2 колонки для компактности
+col1, col2 = st.columns(2)
 
-noise_level = st.sidebar.slider(
-    "Уровень фонового шума", 
-    min_value=0.0, 
-    max_value=1.0, 
-    value=0.25, 
-    step=0.05
-)
+with col1:
+    num_pulses = st.slider(
+        "Количество линий (профилей)", 
+        min_value=10, 
+        max_value=80, 
+        value=40, 
+        step=5
+    )
+    
+    line_width = st.slider(
+        "Толщина линий (pt)", 
+        min_value=0.5, 
+        max_value=3.0, 
+        value=1.6, 
+        step=0.1
+    )
 
-color_theme = st.sidebar.selectbox(
-    "Цветовая палитра", 
-    ["Бирюзовый градиент", "Красный градиент", "Зеленый градиент"]
-)
+with col2:
+    noise_level = st.slider(
+        "Уровень фонового шума", 
+        min_value=0.0, 
+        max_value=1.0, 
+        value=0.25, 
+        step=0.05
+    )
+    
+    color_theme = st.selectbox(
+        "Цветовая палитра", 
+        ["Бирюзовый градиент", "Красный градиент", "Зеленый градиент"]
+    )
 
-# Рандомизация привязана напрямую к значениям слайдеров
-# Это автоматически обновляет паттерн при изменении параметров без кнопки
+# Рандомизация зависит от значений элементов управления
 st.session_state.seed = int(num_pulses * 100 + line_width * 10 + noise_level * 1000)
 np.random.seed(st.session_state.seed)
 
-# 3. Математическое ядро визуализации (сохранено полностью)
+# 3. Математическое ядро визуализации (полностью сохранено)
 points_per_pulse = 300
 x = np.linspace(-10, 10, points_per_pulse)
 
@@ -90,5 +97,5 @@ for i in range(num_pulses):
 ax.axis('off')
 plt.tight_layout()
 
-# 4. Вывод готового холста в браузер
-st.pyplot(fig)
+# 4. Вывод готового холста в зарезервированное место (выше настроек)
+plot_placeholder.pyplot(fig)
