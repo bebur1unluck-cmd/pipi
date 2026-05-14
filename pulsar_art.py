@@ -9,7 +9,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# ХАК ДЛЯ ДИЗАЙНА: Внедрение кастомного CSS для полной пересборки интерфейса Streamlit
+# Исправлено: точное имя параметра — unsafe_allow_html=True
 st.markdown("""
     <style>
     /* Подключение профессионального моноширинного шрифта */
@@ -75,14 +75,14 @@ st.markdown("""
     /* Скрытие стандартного меню и футера Streamlit */
     #MainMenu, footer {visibility: hidden;}
     </style>
-""", unsafehtml=True)
+""", unsafe_allow_html=True)
 
-# Стилизация заголовков веб-интерфейса (без ИИ-эмодзи)
+# Стилизация заголовков веб-интерфейса
 st.title("PULSAR DATA ART SYSTEM")
 st.caption("Генеративная визуализация радиоизлучения пульсаров в реальном времени.")
 
-# 2. Боковая панель управления (Интеракческие параметры)
-st.sidebar.markdown("<p style='color:#00E5FF; font-weight:500; margin-bottom:15px;'>CONTROL PANEL</p>", unsafehtml=True)
+# 2. Боковая панель управления (Интерактивные параметры)
+st.sidebar.markdown("<p style='color:#00E5FF; font-weight:500; margin-bottom:15px;'>CONTROL PANEL</p>", unsafe_html=True)
 num_pulses = st.sidebar.slider("Количество линий (сигналов)", min_value=10, max_value=80, value=40, step=5)
 line_width = st.sidebar.slider("Толщина светящихся линий", min_value=0.5, max_value=3.0, value=1.6, step=0.1)
 noise_level = st.sidebar.slider("Уровень космических помех", min_value=0.0, max_value=1.0, value=0.25, step=0.05)
