@@ -33,7 +33,7 @@ with col1:
     line_width = st.slider(
         "Толщина линий (pt)", 
         min_value=0.5, 
-        max_value=3.0, 
+        max_value=7.0, 
         value=1.6, 
         step=0.1
     )
