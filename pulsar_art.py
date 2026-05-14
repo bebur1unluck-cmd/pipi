@@ -2,86 +2,143 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 1. Конфигурация интерфейса (Минимализм без ИИ-эмодзи)
+# 1. Настройка конфигурации веб-страницы
 st.set_page_config(
-    page_title="Астрофизический архив: Пульсар",
+    page_title="Pulsar Space Data Art",
+    page_icon="🌌",
     layout="centered"
 )
 
-st.title("📟 Радиоинтерферометрия PSR")
-st.caption("Симуляция ленточного самописца аналоговой обсерватории (Стиль: Архив / Ретро-наука).")
+# ХАК ДЛЯ ДИЗАЙНА: Внедрение кастомного CSS для полной пересборки интерфейса Streamlit
+st.markdown("""
+    <style>
+    /* Подключение профессионального моноширинного шрифта */
+    @import url('googleapis.com');
+    
+    #root, .appview-container, .main, .stApp {
+        background-color: #0B0C10 !important;
+        font-family: 'JetBrains Mono', monospace !important;
+    }
+    
+    /* Стилизация боковой панели (сайдбара) */
+    [data-testid="stSidebar"] {
+        background-color: #12141C !important;
+        border-right: 1px solid #1F2331;
+    }
+    
+    /* Кастомизация заголовков */
+    h1 {
+        font-family: 'JetBrains Mono', monospace !important;
+        font-weight: 500 !important;
+        color: #FFFFFF !important;
+        letter-spacing: -1px;
+        font-size: 2.2rem !important;
+        padding-bottom: 0px !important;
+    }
+    
+    .stText, div[data-testid="stMarkdownContainer"] p {
+        font-family: 'JetBrains Mono', monospace !important;
+        color: #8F9AA6 !important;
+        font-size: 0.9rem !important;
+    }
+    
+    /* Переделка кнопки под брутализм/минимализм */
+    div.stButton > button {
+        background-color: #1F2331 !important;
+        color: #00E5FF !important;
+        border: 1px solid #00E5FF !important;
+        border-radius: 0px !important;
+        font-family: 'JetBrains Mono', monospace !important;
+        font-size: 0.85rem !important;
+        transition: all 0.3s ease;
+        width: 100%;
+        letter-spacing: 0.5px;
+    }
+    div.stButton > button:hover {
+        background-color: #00E5FF !important;
+        color: #0B0C10 !important;
+        box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.4);
+    }
+    
+    /* Стилизация ползунков (Sliders) */
+    div[data-testid="stSlider"] [data-testid="stMarkdownContainer"] p {
+        color: #E2E8F0 !important;
+        font-size: 0.85rem !important;
+    }
+    
+    /* Убираем лишние отступы Streamlit для чистоты кадра */
+    .block-container {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Скрытие стандартного меню и футера Streamlit */
+    #MainMenu, footer {visibility: hidden;}
+    </style>
+""", unsafehtml=True)
 
-# 2. Панель калибровки приборов (Ретро-параметры)
-st.sidebar.header("🎛️ Калибровка сигнала")
-num_pulses = st.sidebar.slider("Плотность записи (строки)", 20, 100, 50, 5)
-drift_factor = st.sidebar.slider("Дрейф фазы (нестабильность)", 0.0, 2.0, 0.8, 0.1)
-decay_factor = st.sidebar.slider("Затухание сигнала к краям", 0.1, 2.0, 1.0, 0.1)
-interference_freq = st.sidebar.slider("Частота сетевой наводки (Гц)", 1, 10, 3, 1)
+# Стилизация заголовков веб-интерфейса (без ИИ-эмодзи)
+st.title("PULSAR DATA ART SYSTEM")
+st.caption("Генеративная визуализация радиоизлучения пульсаров в реальном времени.")
 
-style_preset = st.sidebar.selectbox("Режим визуализации", ["Архивная бумага", "Зеленый фосфор", "Инверсия (Чернила)"])
+# 2. Боковая панель управления (Интеракческие параметры)
+st.sidebar.markdown("<p style='color:#00E5FF; font-weight:500; margin-bottom:15px;'>CONTROL PANEL</p>", unsafehtml=True)
+num_pulses = st.sidebar.slider("Количество линий (сигналов)", min_value=10, max_value=80, value=40, step=5)
+line_width = st.sidebar.slider("Толщина светящихся линий", min_value=0.5, max_value=3.0, value=1.6, step=0.1)
+noise_level = st.sidebar.slider("Уровень космических помех", min_value=0.0, max_value=1.0, value=0.25, step=0.05)
+color_theme = st.sidebar.selectbox("Цветовая схема", ["Неоновый бирюзовый", "Огненный красный", "Космический зеленый"])
 
-regenerate = st.sidebar.button("📡 Перехватить новый сигнал")
+# Кнопка для мгновенной перегенерации случайных данных
+regenerate = st.sidebar.button("GENERATE NEW PATTERN")
 
-if regenerate or 'seed' not in st.session_state:
+# Фиксируем или сбрасываем зерно рандома при нажатии кнопки
+if regenerate:
     st.session_state.seed = np.random.randint(0, 100000)
+if 'seed' not in st.session_state:
+    st.session_state.seed = 42
 
 np.random.seed(st.session_state.seed)
 
-# 3. Математическая модель аналогового сигнала
-points_per_pulse = 400
-x = np.linspace(-15, 15, points_per_pulse)
+# 3. Математическое ядро визуализации (ПОЛНОСТЬЮ ВАШ КОД БЕЗ ИЗМЕНЕНИЙ)
+points_per_pulse = 300
+x = np.linspace(-10, 10, points_per_pulse)
 
-# Настройка цветовых пресетов (Уходим от кислотного неона)
-if style_preset == "Архивная бумага":
-    bg_color, line_color, grid_color = '#F4F1EA', '#2B2A27', '#D1C6B4'
-elif style_preset == "Зеленый фосфор":
-    bg_color, line_color, grid_color = '#0D1B0E', '#4AF626', '#1B3B1E'
-else: # Инверсия
-    bg_color, line_color, grid_color = '#111111', '#FFFFFF', '#333333'
-
-fig, ax = plt.subplots(figsize=(10, 12), facecolor=bg_color)
-ax.set_facecolor(bg_color)
-
-# Добавляем координатную сетку как на миллиметровке для эффекта документа
-ax.grid(True, color=grid_color, linestyle='--', linewidth=0.5, zorder=0)
-
-# Базовый дрейф центра для всей серии импульсов
-global_drift = np.sin(np.linspace(0, np.pi * 2, num_pulses)) * drift_factor
+# Инициализация темного холста
+fig, ax = plt.subplots(figsize=(10, 12), facecolor='#0B0C10')
+ax.set_facecolor('#0B0C10')
 
 for i in range(num_pulses):
-    y_base = i * 2.0
+    y_base = i * 1.8
     
-    # Сложная форма импульса: основной всплеск + смещение фазы
-    center = global_drift[i] + np.random.normal(0, 0.2)
-    width = np.random.uniform(0.8, 1.5)
-    amplitude = np.random.uniform(5, 12)
+    # Генерация всплесков (Функция Гаусса)
+    center = np.random.uniform(-2.5, 2.5)
+    width = np.random.uniform(0.6, 1.8)
+    amplitude = np.random.uniform(4, 10)
+    gauss = amplitude * np.exp(-((x - center) ** 2) / (2 * width ** 2))
     
-    # Гауссиана + затухание огибающей к краям (настоящая физика антенны)
-    envelope = np.exp(-(x ** 2) / (2 * (8 * decay_factor) ** 2))
-    gauss = amplitude * np.exp(-((x - center) ** 2) / (2 * width ** 2)) * envelope
+    # Вторичные гармоники и шум
+    secondary_noise = 1.5 * np.exp(-((x - (center + 3)) ** 2) / 0.8) if np.random.rand() > 0.4 else 0
+    cosmic_noise = np.random.normal(0, noise_level, points_per_pulse)
     
-    # Аналоговые помехи: белый шум + низкочастотная наводка 50Гц
-    line_noise = np.random.normal(0, 0.2, points_per_pulse)
-    hum_noise = 0.4 * np.sin(x * interference_freq + i * 0.5)
+    y = y_base + gauss + secondary_noise + cosmic_noise
     
-    y = y_base + gauss + line_noise + hum_noise
+    # Эффект 3D-перекрытия: заливка под графиком в цвет фона
+    ax.fill_between(x, y_base, y, color='#0B0C10', zorder=num_pulses - i)
     
-    # Непрозрачная подложка для эффекта наложения (скрывает задние линии)
-    ax.fill_between(x, y_base, y, color=bg_color, zorder=i + 1)
-    
-    # Отрисовка линии самописца (без градиентов, чистая линия)
-    ax.plot(x, y, color=line_color, linewidth=1.2, alpha=0.9, zorder=i + 1.1)
+    # Расчет цвета на основе выбранной темы
+    progress = i / num_pulses
+    if color_theme == "Неоновый бирюзовый":
+        line_color = (0.1, 0.8 * progress, 0.9, 0.8)
+    elif color_theme == "Огненный красный":
+        line_color = (0.9, 0.3 * progress, 0.1, 0.8)
+    else: # Зеленый
+        line_color = (0.2, 0.9, 0.4 * progress, 0.8)
+        
+    # Отрисовка контура
+    ax.plot(x, y, color=line_color, linewidth=line_width, zorder=num_pulses - i + 0.1)
 
-# Стилизация осей под технический график
-ax.spines['top'].set_visible(False)
-ax.spines['right'].set_visible(False)
-ax.spines['left'].set_color(grid_color)
-ax.spines['bottom'].set_color(grid_color)
-ax.tick_params(colors=line_color, labelsize=8)
-ax.set_xlabel("Время задержки (мс)", color=line_color, fontsize=9)
-ax.set_ylabel("Индекс суб-импульса", color=line_color, fontsize=9)
-
+ax.axis('off')
 plt.tight_layout()
 
-# 4. Вывод холста
+# 4. Вывод готового холста в браузер
 st.pyplot(fig)
