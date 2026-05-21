@@ -1,0 +1,67 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+title UML: варианты использования системы учета товаров
+
+actor "Пользователь\nсистемы" as User
+actor "Поставщик" as Supplier
+actor "Принтер" as Printer
+
+rectangle "Система поддержки заказа\nи учета товаров" {
+  usecase "Добавить товар" as UC_AddProduct
+  usecase "Изменить товар" as UC_EditProduct
+  usecase "Удалить товар" as UC_DeleteProduct
+  usecase "Вести каталог товаров" as UC_ManageProducts
+
+  usecase "Добавить поставщика" as UC_AddSupplier
+  usecase "Изменить поставщика" as UC_EditSupplier
+  usecase "Удалить поставщика" as UC_DeleteSupplier
+  usecase "Вести справочник\nпоставщиков" as UC_ManageSuppliers
+
+  usecase "Составить заказ\nпоставщику" as UC_CreateOrder
+  usecase "Добавить позицию\nзаказа" as UC_AddOrderItem
+  usecase "Проверить товар\nи поставщика" as UC_CheckProductSupplier
+  usecase "Сохранить заказ" as UC_SaveOrder
+
+  usecase "Сформировать список\nвсех товаров" as UC_AllProducts
+  usecase "Сформировать список\nтоваров в наличии" as UC_AvailableProducts
+  usecase "Сформировать список\nтоваров для пополнения" as UC_ReplenishProducts
+  usecase "Сформировать список\nтоваров поставщика" as UC_SupplierProducts
+  usecase "Печатать справочную\nинформацию" as UC_PrintReports
+}
+
+User --> UC_ManageProducts
+User --> UC_ManageSuppliers
+User --> UC_CreateOrder
+User --> UC_PrintReports
+
+Supplier <-- UC_CreateOrder : получает заказ
+Printer <-- UC_PrintReports : выводит отчет
+
+UC_ManageProducts .> UC_AddProduct : <<include>>
+UC_ManageProducts .> UC_EditProduct : <<include>>
+UC_ManageProducts .> UC_DeleteProduct : <<include>>
+
+UC_ManageSuppliers .> UC_AddSupplier : <<include>>
+UC_ManageSuppliers .> UC_EditSupplier : <<include>>
+UC_ManageSuppliers .> UC_DeleteSupplier : <<include>>
+
+UC_CreateOrder .> UC_CheckProductSupplier : <<include>>
+UC_CreateOrder .> UC_AddOrderItem : <<include>>
+UC_CreateOrder .> UC_SaveOrder : <<include>>
+
+UC_PrintReports .> UC_AllProducts : <<extend>>
+UC_PrintReports .> UC_AvailableProducts : <<extend>>
+UC_PrintReports .> UC_ReplenishProducts : <<extend>>
+UC_PrintReports .> UC_SupplierProducts : <<extend>>
+
+note right of UC_ReplenishProducts
+  Товар попадает в список,
+  если его количество меньше
+  или равно минимальному остатку.
+end note
+
+@enduml

@@ -1,0 +1,52 @@
+@startuml
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+
+title UML: последовательность составления заказа поставщику
+
+actor "Пользователь" as User
+boundary "Интерфейс системы" as UI
+control "OrderService" as OrderService
+control "ProductRepository" as ProductRepository
+control "SupplierRepository" as SupplierRepository
+database "База данных" as DB
+entity "Заказ" as Order
+participant "Поставщик" as Supplier
+
+User -> UI : Выбрать поставщика
+UI -> SupplierRepository : findById(supplierId)
+SupplierRepository -> DB : SELECT supplier
+DB --> SupplierRepository : supplier
+SupplierRepository --> UI : supplier
+
+User -> UI : Создать заказ
+UI -> OrderService : createOrder(supplierId)
+OrderService -> SupplierRepository : findById(supplierId)
+SupplierRepository -> DB : SELECT supplier
+DB --> SupplierRepository : supplier
+SupplierRepository --> OrderService : supplier
+OrderService -> Order : new DraftOrder(supplier)
+OrderService --> UI : orderId
+
+loop Для каждой позиции заказа
+  User -> UI : Выбрать товар и количество
+  UI -> OrderService : addOrderItem(orderId, productId, quantity)
+  OrderService -> ProductRepository : findById(productId)
+  ProductRepository -> DB : SELECT product
+  DB --> ProductRepository : product
+  ProductRepository --> OrderService : product
+  OrderService -> OrderService : Проверить поставщика товара\nи quantity > 0
+  OrderService -> Order : addItem(product, quantity)
+  OrderService --> UI : Позиция добавлена
+end
+
+User -> UI : Подтвердить заказ
+UI -> OrderService : submitOrder(orderId)
+OrderService -> Order : submit()
+OrderService -> DB : INSERT order, order_items
+DB --> OrderService : ok
+OrderService -> Supplier : Передать заказ
+OrderService --> UI : Заказ сохранен и отправлен
+UI --> User : Показать номер и статус заказа
+
+@enduml

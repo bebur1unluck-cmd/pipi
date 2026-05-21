@@ -1,0 +1,92 @@
+digraph IDEF0_A0 {
+  graph [
+    label="IDEF0 A0: декомпозиция системы поддержки заказа и учета товаров",
+    labelloc=t,
+    fontsize=20,
+    rankdir=LR,
+    splines=ortho,
+    nodesep=0.7,
+    ranksep=1.1
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fillcolor="#DAE8FC",
+    color="#6C8EBF",
+    fontname="Arial",
+    fontsize=12,
+    margin="0.12,0.08"
+  ];
+
+  edge [
+    fontname="Arial",
+    fontsize=10,
+    color="#333333",
+    arrowsize=0.8
+  ];
+
+  input_products [shape=note, fillcolor="#FFF2CC", color="#D6B656", label="Данные о товарах\nи остатках"];
+  input_suppliers [shape=note, fillcolor="#FFF2CC", color="#D6B656", label="Данные о\nпоставщиках"];
+  input_order_request [shape=note, fillcolor="#FFF2CC", color="#D6B656", label="Запрос на\nсоставление заказа"];
+  input_report_request [shape=note, fillcolor="#FFF2CC", color="#D6B656", label="Запрос на\nсправочный отчет"];
+
+  control_rules [shape=component, fillcolor="#E1D5E7", color="#9673A6", label="Правила учета,\nпороги пополнения,\nформы отчетов"];
+  mechanism_user [shape=folder, fillcolor="#D5E8D4", color="#82B366", label="Пользователь"];
+  mechanism_db [shape=cylinder, fillcolor="#D5E8D4", color="#82B366", label="База данных"];
+  mechanism_printer [shape=folder, fillcolor="#D5E8D4", color="#82B366", label="Принтер"];
+
+  A1 [label="A1\nВести справочник\nпоставщиков"];
+  A2 [label="A2\nВести каталог\nтоваров и остатков"];
+  A3 [label="A3\nКонтролировать\nпотребность в пополнении"];
+  A4 [label="A4\nФормировать заказ\nпоставщику"];
+  A5 [label="A5\nФормировать и\nпечатать справки"];
+
+  supplier_catalog [shape=note, fillcolor="#F8CECC", color="#B85450", label="Актуальный\nсправочник поставщиков"];
+  goods_catalog [shape=note, fillcolor="#F8CECC", color="#B85450", label="Актуальный\nкаталог товаров"];
+  replenish_list [shape=note, fillcolor="#F8CECC", color="#B85450", label="Список товаров\nдля пополнения"];
+  supplier_order [shape=note, fillcolor="#F8CECC", color="#B85450", label="Заказ\nпоставщику"];
+  printed_reports [shape=note, fillcolor="#F8CECC", color="#B85450", label="Печатные\nсправки"];
+
+  input_suppliers -> A1 [label="вход"];
+  input_products -> A2 [label="вход"];
+  input_order_request -> A4 [label="вход"];
+  input_report_request -> A5 [label="вход"];
+
+  control_rules -> A1 [label="управление"];
+  control_rules -> A2 [label="управление"];
+  control_rules -> A3 [label="управление"];
+  control_rules -> A4 [label="управление"];
+  control_rules -> A5 [label="управление"];
+
+  mechanism_user -> A1 [label="механизм"];
+  mechanism_user -> A2 [label="механизм"];
+  mechanism_user -> A4 [label="механизм"];
+  mechanism_user -> A5 [label="механизм"];
+  mechanism_db -> A1 [label="механизм"];
+  mechanism_db -> A2 [label="механизм"];
+  mechanism_db -> A3 [label="механизм"];
+  mechanism_db -> A4 [label="механизм"];
+  mechanism_db -> A5 [label="механизм"];
+  mechanism_printer -> A5 [label="механизм"];
+
+  A1 -> supplier_catalog [label="выход"];
+  supplier_catalog -> A2 [label="поставщик товара"];
+  supplier_catalog -> A4 [label="получатель заказа"];
+  supplier_catalog -> A5 [label="фильтр по поставщику"];
+
+  A2 -> goods_catalog [label="выход"];
+  goods_catalog -> A3 [label="остатки"];
+  goods_catalog -> A4 [label="позиции заказа"];
+  goods_catalog -> A5 [label="данные для отчетов"];
+
+  A3 -> replenish_list [label="выход"];
+  replenish_list -> A4 [label="рекомендованные позиции"];
+  replenish_list -> A5 [label="данные для отчета"];
+
+  A4 -> supplier_order [label="выход"];
+  A5 -> printed_reports [label="выход"];
+
+  {rank=same; input_products; input_suppliers; input_order_request; input_report_request}
+  {rank=same; supplier_catalog; goods_catalog; replenish_list; supplier_order; printed_reports}
+}
