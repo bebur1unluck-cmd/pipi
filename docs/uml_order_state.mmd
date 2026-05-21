@@ -1,0 +1,23 @@
+stateDiagram-v2
+  [*] --> Draft: создать заказ
+
+  Draft: Черновик
+  Draft --> Draft: добавить позицию
+  Draft --> Draft: изменить количество
+  Draft --> Draft: удалить позицию
+  Draft --> Cancelled: отменить пустой\nили ошибочный заказ
+  Draft --> Submitted: подтвердить\nнепустой заказ
+
+  Submitted: Подтвержден
+  Submitted --> SentToSupplier: передать поставщику
+  Submitted --> Cancelled: отменить до передачи
+
+  SentToSupplier: Отправлен поставщику
+  SentToSupplier --> Closed: заказ принят\nк исполнению
+  SentToSupplier --> Cancelled: поставщик отказал\nили заказ отозван
+
+  Closed: Закрыт
+  Cancelled: Отменен
+
+  Closed --> [*]
+  Cancelled --> [*]

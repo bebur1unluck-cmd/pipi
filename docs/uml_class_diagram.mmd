@@ -1,0 +1,122 @@
+classDiagram
+direction LR
+
+class Supplier {
+  +UUID id
+  +String companyName
+  +String address
+  +String phone
+  +add()
+  +update()
+  +delete()
+}
+
+class Shelf {
+  +UUID id
+  +String code
+  +String description
+}
+
+class Product {
+  +UUID id
+  +String name
+  +int quantity
+  +int minQuantity
+  +isAvailable() bool
+  +needsReplenishment() bool
+  +changeQuantity(newQuantity)
+  +changeShelf(shelf)
+}
+
+class Order {
+  +UUID id
+  +String number
+  +Date createdAt
+  +OrderStatus status
+  +addItem(product, quantity)
+  +removeItem(product)
+  +submit()
+  +cancel()
+}
+
+class OrderItem {
+  +UUID id
+  +int quantity
+  +changeQuantity(quantity)
+}
+
+class OrderStatus {
+  <<enumeration>>
+  DRAFT
+  SUBMITTED
+  SENT_TO_SUPPLIER
+  CANCELLED
+}
+
+class ProductRepository {
+  +save(product)
+  +delete(productId)
+  +findAll()
+  +findAvailable()
+  +findNeedsReplenishment()
+  +findBySupplier(supplierId)
+}
+
+class SupplierRepository {
+  +save(supplier)
+  +delete(supplierId)
+  +findAll()
+  +findById(supplierId)
+}
+
+class OrderRepository {
+  +save(order)
+  +findById(orderId)
+  +findBySupplier(supplierId)
+}
+
+class InventoryService {
+  +createProduct(data)
+  +updateProduct(productId, data)
+  +deleteProduct(productId)
+  +changeStock(productId, quantity)
+}
+
+class SupplierService {
+  +createSupplier(data)
+  +updateSupplier(supplierId, data)
+  +deleteSupplier(supplierId)
+}
+
+class OrderService {
+  +createOrder(supplierId)
+  +addOrderItem(orderId, productId, quantity)
+  +submitOrder(orderId)
+}
+
+class ReportService {
+  +allProductsReport()
+  +availableProductsReport()
+  +replenishmentReport()
+  +productsBySupplierReport(supplierId)
+}
+
+class PrintService {
+  +print(report)
+}
+
+Supplier "1" --> "0..*" Product : supplies
+Shelf "1" --> "0..*" Product : stores
+Supplier "1" --> "0..*" Order : receives
+Order "1" *-- "1..*" OrderItem : contains
+OrderItem "*" --> "1" Product : product
+Order --> OrderStatus : status
+
+InventoryService --> ProductRepository
+SupplierService --> SupplierRepository
+OrderService --> OrderRepository
+OrderService --> ProductRepository
+OrderService --> SupplierRepository
+ReportService --> ProductRepository
+ReportService --> SupplierRepository
+PrintService ..> ReportService : prints reports from

@@ -1,0 +1,124 @@
+<mxfile host="app.diagrams.net" modified="2026-05-21T08:53:00.000Z" agent="Cursor" version="24.7.17">
+  <diagram id="idef0-context-a-0" name="IDEF0 A-0">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="IDEF0 A-0: контекст системы поддержки заказа и учета товаров" style="text;html=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="220" y="40" width="720" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="system" value="A-0&#xa;Поддерживать заказ&#xa;и учет товаров" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="420" y="300" width="330" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="in-data-products" value="Данные о товарах:&#xa;наименование, полка, количество" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" target="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="320" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="300" y="320"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="in-suppliers" value="Данные о поставщиках:&#xa;фирма, адрес, телефон" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" target="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="370" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="300" y="370"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="in-requests" value="Запросы пользователя:&#xa;учет, заказ, отчет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" target="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="420" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="300" y="420"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl-rules" value="Правила учета&#xa;товаров и заказов" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" target="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="130" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="470" y="240"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl-thresholds" value="Пороги пополнения&#xa;и формы отчетов" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" target="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="130" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="610" y="240"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl-law" value="Регламент хранения&#xa;и печати данных" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" target="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="130" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="720" y="240"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out-orders" value="Заказы поставщикам" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" source="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="320" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="900" y="320"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out-reports" value="Печатные и экранные&#xa;справочные отчеты" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" source="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="370" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="900" y="370"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out-catalog" value="Актуальный каталог&#xa;товаров и поставщиков" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" source="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="420" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="900" y="420"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech-user" value="Пользователь системы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" target="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="690" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="480" y="560"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech-db" value="База данных" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" target="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="690" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="600" y="560"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech-printer" value="Принтер" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2" edge="1" parent="1" target="system">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="690" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="720" y="560"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-input" value="Входы" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="270" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-control" value="Управление" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="470" y="95" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-output" value="Выходы" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="980" y="270" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-mechanism" value="Механизмы" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="480" y="720" width="110" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
