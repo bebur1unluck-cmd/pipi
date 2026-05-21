@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <defs>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2F2824" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      text { font-family: Inter, Arial, sans-serif; dominant-baseline: hanging; }
+      .small { font-size: 11px; }
+      .body { font-size: 13px; }
+      .label { font-size: 12px; font-weight: 600; }
+      .h1 { font-size: 24px; font-weight: 800; }
+      .h2 { font-size: 18px; font-weight: 700; }
+      .btn { font-size: 14px; font-weight: 700; }
+    </style>
+  </defs>
+  <title>13 Поиск по проблеме</title>
+  <rect width="390" height="844" rx="28" fill="#F8F1EC"/>
+  <text x="24" y="16" fill="#2F2824" font-size="13" font-weight="700" text-anchor="start" class="body">
+    <tspan x="24" dy="0">9:41</tspan>
+  </text>
+  <rect x="300" y="18" width="42" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="346" y="18" width="20" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="55" fill="#744637" font-size="24" font-weight="800" text-anchor="middle" class="h1">
+    <tspan x="40" dy="0">‹</tspan>
+  </text>
+  <text x="72" y="46" fill="#2F2824" font-size="22" font-weight="800" text-anchor="start" class="">
+    <tspan x="72" dy="0">Поиск по проблеме</tspan>
+  </text>
+  <text x="72" y="76" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="72" dy="0">Специалист под конкретный риск</tspan>
+  </text>
+  <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="350" y="57" fill="#A96F58" font-size="18" font-weight="700" text-anchor="middle" class="h2">
+    <tspan x="350" dy="0">♡</tspan>
+  </text>
+  <text x="20" y="104" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="20" dy="0">Что нужно решить?</tspan>
+  </text>
+  <rect x="20" y="140" width="350" height="76" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="156" fill="#2F2824" font-size="16" font-weight="700" text-anchor="start" class="">
+    <tspan x="40" dy="0">Старые коммуникации</tspan>
+  </text>
+  <text x="40" y="184" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="40" dy="0">нужен инженер и дизайнер санузла</tspan>
+  </text>
+  <text x="340" y="166" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="340" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="236" width="350" height="76" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="252" fill="#2F2824" font-size="16" font-weight="700" text-anchor="start" class="">
+    <tspan x="40" dy="0">Несущие стены</tspan>
+  </text>
+  <text x="40" y="280" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="40" dy="0">проверить возможность перепланировки</tspan>
+  </text>
+  <text x="340" y="262" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="340" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="332" width="350" height="76" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="348" fill="#2F2824" font-size="16" font-weight="700" text-anchor="start" class="">
+    <tspan x="40" dy="0">Мало места для жильцов</tspan>
+  </text>
+  <text x="40" y="376" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="40" dy="0">планировка и хранение</tspan>
+  </text>
+  <text x="340" y="358" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="340" dy="0">›</tspan>
+  </text>
+  <text x="20" y="468" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="20" dy="0">Подходящие профили</tspan>
+  </text>
+  <rect x="20" y="504" width="350" height="98" rx="24" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <circle cx="67" cy="553" r="29" fill="#EBD4CB"/>
+  <text x="67" y="544" fill="#744637" font-size="14" font-weight="800" text-anchor="middle" class="">
+    <tspan x="67" dy="0">АВ</tspan>
+  </text>
+  <text x="104" y="522" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="104" dy="0">Антон Ветров</tspan>
+  </text>
+  <text x="104" y="554" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="104" dy="0">конструктив и согласования</tspan>
+  </text>
+  <rect x="300" y="530" width="42" height="28" rx="14" fill="#EBD4CB"/>
+  <text x="321" y="537" fill="#744637" font-size="12" font-weight="800" text-anchor="middle" class="label">
+    <tspan x="321" dy="0">4.9</tspan>
+  </text>
+  <rect x="20" y="626" width="350" height="98" rx="24" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <circle cx="67" cy="675" r="29" fill="#EBD4CB"/>
+  <text x="67" y="666" fill="#744637" font-size="14" font-weight="800" text-anchor="middle" class="">
+    <tspan x="67" dy="0">МК</tspan>
+  </text>
+  <text x="104" y="644" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="104" dy="0">Мария Климова</tspan>
+  </text>
+  <text x="104" y="676" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="104" dy="0">зонирование малых площадей</tspan>
+  </text>
+  <rect x="300" y="652" width="42" height="28" rx="14" fill="#EBD4CB"/>
+  <text x="321" y="659" fill="#744637" font-size="12" font-weight="800" text-anchor="middle" class="label">
+    <tspan x="321" dy="0">4.9</tspan>
+  </text>
+  <a href="12_specialists.svg" aria-label="Назад: specialists">
+    <title>Назад: specialists</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="14_engineers.svg" aria-label="Проблема: старые коммуникации">
+    <title>Проблема: старые коммуникации</title>
+    <rect x="20" y="140" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="14_engineers.svg" aria-label="Проблема: несущие стены">
+    <title>Проблема: несущие стены</title>
+    <rect x="20" y="236" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="15_designers.svg" aria-label="Проблема: мало места для жильцов">
+    <title>Проблема: мало места для жильцов</title>
+    <rect x="20" y="332" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Антона Ветрова">
+    <title>Открыть профиль Антона Ветрова</title>
+    <rect x="20" y="504" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Марии Климовой">
+    <title>Открыть профиль Марии Климовой</title>
+    <rect x="20" y="626" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+</svg>

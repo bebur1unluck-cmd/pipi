@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <defs>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2F2824" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      text { font-family: Inter, Arial, sans-serif; dominant-baseline: hanging; }
+      .small { font-size: 11px; }
+      .body { font-size: 13px; }
+      .label { font-size: 12px; font-weight: 600; }
+      .h1 { font-size: 24px; font-weight: 800; }
+      .h2 { font-size: 18px; font-weight: 700; }
+      .btn { font-size: 14px; font-weight: 700; }
+    </style>
+  </defs>
+  <title>16 Профиль мастера</title>
+  <rect width="390" height="844" rx="28" fill="#F8F1EC"/>
+  <text x="24" y="16" fill="#2F2824" font-size="13" font-weight="700" text-anchor="start" class="body">
+    <tspan x="24" dy="0">9:41</tspan>
+  </text>
+  <rect x="300" y="18" width="42" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="346" y="18" width="20" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="55" fill="#744637" font-size="24" font-weight="800" text-anchor="middle" class="h1">
+    <tspan x="40" dy="0">‹</tspan>
+  </text>
+  <text x="72" y="46" fill="#2F2824" font-size="22" font-weight="800" text-anchor="start" class="">
+    <tspan x="72" dy="0">Профиль мастера</tspan>
+  </text>
+  <text x="72" y="76" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="72" dy="0">Проверенный специалист</tspan>
+  </text>
+  <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="350" y="57" fill="#A96F58" font-size="18" font-weight="700" text-anchor="middle" class="h2">
+    <tspan x="350" dy="0">♡</tspan>
+  </text>
+  <rect x="20" y="104" width="350" height="188" rx="28" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <circle cx="81" cy="171" r="39" fill="#EBD4CB"/>
+  <text x="81" y="158" fill="#744637" font-size="15" font-weight="800" text-anchor="middle" class="">
+    <tspan x="81" dy="0">МК</tspan>
+  </text>
+  <text x="138" y="132" fill="#2F2824" font-size="22" font-weight="800" text-anchor="start" class="">
+    <tspan x="138" dy="0">Мария Климова</tspan>
+  </text>
+  <text x="138" y="168" fill="#806B62" font-size="14" font-weight="400" text-anchor="start" class="">
+    <tspan x="138" dy="0">Дизайнер интерьера</tspan>
+  </text>
+  <rect x="138" y="206" width="124" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="200.0" y="216" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="200.0" dy="0">малые площади</tspan>
+  </text>
+  <rect x="270" y="206" width="74" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="307.0" y="216" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="307.0" dy="0">студии</tspan>
+  </text>
+  <rect x="20" y="318" width="106" height="70" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="73" y="334" fill="#2F2824" font-size="18" font-weight="800" text-anchor="middle" class="h2">
+    <tspan x="73" dy="0">4.9</tspan>
+  </text>
+  <text x="73" y="362" fill="#806B62" font-size="10" font-weight="400" text-anchor="middle" class="">
+    <tspan x="73" dy="0">рейтинг</tspan>
+  </text>
+  <rect x="136" y="318" width="106" height="70" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="189" y="334" fill="#2F2824" font-size="18" font-weight="800" text-anchor="middle" class="h2">
+    <tspan x="189" dy="0">84</tspan>
+  </text>
+  <text x="189" y="362" fill="#806B62" font-size="10" font-weight="400" text-anchor="middle" class="">
+    <tspan x="189" dy="0">проекта</tspan>
+  </text>
+  <rect x="252" y="318" width="106" height="70" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="305" y="334" fill="#2F2824" font-size="18" font-weight="800" text-anchor="middle" class="h2">
+    <tspan x="305" dy="0">6 лет</tspan>
+  </text>
+  <text x="305" y="362" fill="#806B62" font-size="10" font-weight="400" text-anchor="middle" class="">
+    <tspan x="305" dy="0">опыт</tspan>
+  </text>
+  <text x="20" y="426" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="20" dy="0">Кейсы специалиста</tspan>
+  </text>
+  <rect x="20" y="462" width="350" height="98" rx="24" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <rect x="34" y="476" width="86" height="70" rx="17.5" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <rect x="40.88" y="483.0" width="72.24" height="32.2" rx="16" fill="#EBD4CB"/>
+  <rect x="46.04" y="519.4" width="29.240000000000002" height="15.4" rx="9" fill="#D6B1A6"/>
+  <rect x="80.44" y="519.4" width="27.52" height="15.4" rx="9" fill="#CFA398"/>
+  <rect x="49.48" y="490.0" width="20.64" height="15.4" rx="10" fill="#FFFFFF" opacity="0.6"/>
+  <line x1="77.0" y1="487.2" x2="77.0" y2="537.6" stroke="#FFFFFF" stroke-width="1" opacity="0.7" stroke-linecap="round"/>
+  <text x="136" y="480" fill="#2F2824" font-size="16" font-weight="700" text-anchor="start" class="">
+    <tspan x="136" dy="0">Студия с рабочим</tspan>
+    <tspan x="136" dy="22">местом</tspan>
+  </text>
+  <text x="136" y="512" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="136" dy="0">29 м², Japandi</tspan>
+  </text>
+  <text x="338" y="498" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="338" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="584" width="350" height="98" rx="24" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <rect x="34" y="598" width="86" height="70" rx="17.5" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <rect x="40.88" y="605.0" width="72.24" height="32.2" rx="16" fill="#EBD4CB"/>
+  <rect x="46.04" y="641.4" width="29.240000000000002" height="15.4" rx="9" fill="#D6B1A6"/>
+  <rect x="80.44" y="641.4" width="27.52" height="15.4" rx="9" fill="#CFA398"/>
+  <rect x="49.48" y="612.0" width="20.64" height="15.4" rx="10" fill="#FFFFFF" opacity="0.6"/>
+  <line x1="77.0" y1="609.2" x2="77.0" y2="659.6" stroke="#FFFFFF" stroke-width="1" opacity="0.7" stroke-linecap="round"/>
+  <text x="136" y="602" fill="#2F2824" font-size="16" font-weight="700" text-anchor="start" class="">
+    <tspan x="136" dy="0">Кухня в старом фонде</tspan>
+  </text>
+  <text x="136" y="634" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="136" dy="0">8 м², коммуникации</tspan>
+  </text>
+  <text x="338" y="620" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="338" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="724" width="166" height="52" rx="18" fill="#A96F58" filter="url(#cardShadow)"/>
+  <text x="103.0" y="741" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
+    <tspan x="103.0" dy="0">Оставить заявку</tspan>
+  </text>
+  <rect x="198" y="724" width="172" height="52" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="284.0" y="741" fill="#744637" font-size="14" font-weight="700" text-anchor="middle" class="">
+    <tspan x="284.0" dy="0">В избранное</tspan>
+  </text>
+  <a href="12_specialists.svg" aria-label="Назад: specialists">
+    <title>Назад: specialists</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Открыть кейс специалиста: студия">
+    <title>Открыть кейс специалиста: студия</title>
+    <rect x="20" y="462" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Открыть кейс специалиста: кухня">
+    <title>Открыть кейс специалиста: кухня</title>
+    <rect x="20" y="584" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="17_specialist_request.svg" aria-label="Оставить заявку специалисту">
+    <title>Оставить заявку специалисту</title>
+    <rect x="20" y="724" width="166" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Сохранить специалиста в избранное">
+    <title>Сохранить специалиста в избранное</title>
+    <rect x="198" y="724" width="172" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+</svg>

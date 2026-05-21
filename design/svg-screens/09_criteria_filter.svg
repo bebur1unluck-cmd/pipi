@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <defs>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2F2824" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      text { font-family: Inter, Arial, sans-serif; dominant-baseline: hanging; }
+      .small { font-size: 11px; }
+      .body { font-size: 13px; }
+      .label { font-size: 12px; font-weight: 600; }
+      .h1 { font-size: 24px; font-weight: 800; }
+      .h2 { font-size: 18px; font-weight: 700; }
+      .btn { font-size: 14px; font-weight: 700; }
+    </style>
+  </defs>
+  <title>09 Фильтр по критериям</title>
+  <rect width="390" height="844" rx="28" fill="#F8F1EC"/>
+  <text x="24" y="16" fill="#2F2824" font-size="13" font-weight="700" text-anchor="start" class="body">
+    <tspan x="24" dy="0">9:41</tspan>
+  </text>
+  <rect x="300" y="18" width="42" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="346" y="18" width="20" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="55" fill="#744637" font-size="24" font-weight="800" text-anchor="middle" class="h1">
+    <tspan x="40" dy="0">‹</tspan>
+  </text>
+  <text x="72" y="46" fill="#2F2824" font-size="22" font-weight="800" text-anchor="start" class="">
+    <tspan x="72" dy="0">Фильтр по критериям</tspan>
+  </text>
+  <text x="72" y="76" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="72" dy="0">Технические и бытовые ограничения</tspan>
+  </text>
+  <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="350" y="57" fill="#A96F58" font-size="18" font-weight="700" text-anchor="middle" class="h2">
+    <tspan x="350" dy="0">♡</tspan>
+  </text>
+  <text x="20" y="104" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="20" dy="0">Площадь</tspan>
+  </text>
+  <rect x="20.0" y="140" width="170.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="105.0" y="150" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="105.0" dy="0">до 12 м²</tspan>
+  </text>
+  <rect x="200.0" y="140" width="170.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="285.0" y="150" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="285.0" dy="0">12-25 м²</tspan>
+  </text>
+  <rect x="20.0" y="188" width="170.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="105.0" y="198" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="105.0" dy="0">25-45 м²</tspan>
+  </text>
+  <rect x="200.0" y="188" width="170.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="285.0" y="198" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="285.0" dy="0">45+ м²</tspan>
+  </text>
+  <text x="20" y="254" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="20" dy="0">Жильцы</tspan>
+  </text>
+  <rect x="20.0" y="290" width="110.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="75.0" y="300" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="75.0" dy="0">1 человек</tspan>
+  </text>
+  <rect x="140.0" y="290" width="110.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="195.0" y="300" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="195.0" dy="0">пара</tspan>
+  </text>
+  <rect x="260.0" y="290" width="110.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="315.0" y="300" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="315.0" dy="0">семья</tspan>
+  </text>
+  <rect x="20.0" y="338" width="110.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="75.0" y="348" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="75.0" dy="0">дети</tspan>
+  </text>
+  <rect x="140.0" y="338" width="110.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="195.0" y="348" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="195.0" dy="0">питомцы</tspan>
+  </text>
+  <rect x="260.0" y="338" width="110.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="315.0" y="348" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="315.0" dy="0">аренда</tspan>
+  </text>
+  <text x="20" y="420" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="20" dy="0">Особенности конструкций</tspan>
+  </text>
+  <rect x="20.0" y="456" width="170.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="105.0" y="466" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="105.0" dy="0">несущие стены</tspan>
+  </text>
+  <rect x="200.0" y="456" width="170.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="285.0" y="466" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="285.0" dy="0">старые трубы</tspan>
+  </text>
+  <rect x="20.0" y="504" width="170.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="105.0" y="514" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="105.0" dy="0">мало света</tspan>
+  </text>
+  <rect x="200.0" y="504" width="170.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="285.0" y="514" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="285.0" dy="0">низкий потолок</tspan>
+  </text>
+  <rect x="20" y="724" width="350" height="52" rx="18" fill="#A96F58" filter="url(#cardShadow)"/>
+  <text x="195.0" y="741" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
+    <tspan x="195.0" dy="0">Найти подходящие кейсы</tspan>
+  </text>
+  <a href="06_idea_catalog.svg" aria-label="Назад: catalog">
+    <title>Назад: catalog</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Найти подходящие кейсы">
+    <title>Найти подходящие кейсы</title>
+    <rect x="20" y="724" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+</svg>

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <defs>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2F2824" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      text { font-family: Inter, Arial, sans-serif; dominant-baseline: hanging; }
+      .small { font-size: 11px; }
+      .body { font-size: 13px; }
+      .label { font-size: 12px; font-weight: 600; }
+      .h1 { font-size: 24px; font-weight: 800; }
+      .h2 { font-size: 18px; font-weight: 700; }
+      .btn { font-size: 14px; font-weight: 700; }
+    </style>
+  </defs>
+  <title>05 Дизайн жилья</title>
+  <rect width="390" height="844" rx="28" fill="#F8F1EC"/>
+  <text x="24" y="16" fill="#2F2824" font-size="13" font-weight="700" text-anchor="start" class="body">
+    <tspan x="24" dy="0">9:41</tspan>
+  </text>
+  <rect x="300" y="18" width="42" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="346" y="18" width="20" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="55" fill="#744637" font-size="24" font-weight="800" text-anchor="middle" class="h1">
+    <tspan x="40" dy="0">‹</tspan>
+  </text>
+  <text x="72" y="46" fill="#2F2824" font-size="22" font-weight="800" text-anchor="start" class="">
+    <tspan x="72" dy="0">Дизайн жилья</tspan>
+  </text>
+  <text x="72" y="76" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="72" dy="0">Подбор решения для квартиры или дома</tspan>
+  </text>
+  <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="350" y="57" fill="#A96F58" font-size="18" font-weight="700" text-anchor="middle" class="h2">
+    <tspan x="350" dy="0">♡</tspan>
+  </text>
+  <text x="20" y="104" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="20" dy="0">Тип жилья</tspan>
+  </text>
+  <rect x="20.0" y="140" width="110.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="75.0" y="150" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="75.0" dy="0">Студия</tspan>
+  </text>
+  <rect x="140.0" y="140" width="110.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="195.0" y="150" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="195.0" dy="0">1-комн.</tspan>
+  </text>
+  <rect x="260.0" y="140" width="110.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="315.0" y="150" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="315.0" dy="0">2-комн.</tspan>
+  </text>
+  <rect x="20.0" y="188" width="110.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="75.0" y="198" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="75.0" dy="0">Дом</tspan>
+  </text>
+  <rect x="140.0" y="188" width="110.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="195.0" y="198" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="195.0" dy="0">Апартаменты</tspan>
+  </text>
+  <rect x="260.0" y="188" width="110.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="315.0" y="198" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="315.0" dy="0">Комната</tspan>
+  </text>
+  <text x="20" y="254" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="20" dy="0">Состояние</tspan>
+  </text>
+  <rect x="20.0" y="290" width="170.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="105.0" y="300" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="105.0" dy="0">новостройка</tspan>
+  </text>
+  <rect x="200.0" y="290" width="170.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="285.0" y="300" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="285.0" dy="0">вторичка</tspan>
+  </text>
+  <rect x="20.0" y="338" width="170.0" height="36" rx="18" fill="#FFFDFC" stroke="#E4D1C8" stroke-width="1"/>
+  <text x="105.0" y="348" fill="#806B62" font-size="12" font-weight="500" text-anchor="middle" class="">
+    <tspan x="105.0" dy="0">старый фонд</tspan>
+  </text>
+  <rect x="200.0" y="338" width="170.0" height="36" rx="18" fill="#EBD4CB"/>
+  <text x="285.0" y="348" fill="#744637" font-size="12" font-weight="700" text-anchor="middle" class="label">
+    <tspan x="285.0" dy="0">без ремонта</tspan>
+  </text>
+  <text x="20" y="404" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="20" dy="0">Фокус проекта</tspan>
+  </text>
+  <rect x="20" y="440" width="350" height="76" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="456" fill="#2F2824" font-size="16" font-weight="700" text-anchor="start" class="">
+    <tspan x="40" dy="0">Зонирование малой площади</tspan>
+  </text>
+  <text x="40" y="484" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="40" dy="0">Для студий и семей с разным режимом дня</tspan>
+  </text>
+  <text x="340" y="466" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="340" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="536" width="350" height="76" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="552" fill="#2F2824" font-size="16" font-weight="700" text-anchor="start" class="">
+    <tspan x="40" dy="0">Много скрытого хранения</tspan>
+  </text>
+  <text x="40" y="580" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="40" dy="0">Шкафы до потолка, антресоли, ниши</tspan>
+  </text>
+  <text x="340" y="562" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="340" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="632" width="350" height="76" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="648" fill="#2F2824" font-size="16" font-weight="700" text-anchor="start" class="">
+    <tspan x="40" dy="0">Бюджетная реализация</tspan>
+  </text>
+  <text x="40" y="676" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="40" dy="0">Материалы и мебель из доступных линеек</tspan>
+  </text>
+  <text x="340" y="658" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="340" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="738" width="350" height="52" rx="18" fill="#A96F58" filter="url(#cardShadow)"/>
+  <text x="195.0" y="755" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
+    <tspan x="195.0" dy="0">Сформировать подборку</tspan>
+  </text>
+  <a href="03_object_choice.svg" aria-label="Назад: object">
+    <title>Назад: object</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Фокус: зонирование малой площади">
+    <title>Фокус: зонирование малой площади</title>
+    <rect x="20" y="440" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Фокус: скрытое хранение">
+    <title>Фокус: скрытое хранение</title>
+    <rect x="20" y="536" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Фокус: бюджетная реализация">
+    <title>Фокус: бюджетная реализация</title>
+    <rect x="20" y="632" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Сформировать подборку">
+    <title>Сформировать подборку</title>
+    <rect x="20" y="738" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+</svg>

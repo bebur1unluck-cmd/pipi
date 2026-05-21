@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <defs>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2F2824" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      text { font-family: Inter, Arial, sans-serif; dominant-baseline: hanging; }
+      .small { font-size: 11px; }
+      .body { font-size: 13px; }
+      .label { font-size: 12px; font-weight: 600; }
+      .h1 { font-size: 24px; font-weight: 800; }
+      .h2 { font-size: 18px; font-weight: 700; }
+      .btn { font-size: 14px; font-weight: 700; }
+    </style>
+  </defs>
+  <title>08 Фильтр по классу</title>
+  <rect width="390" height="844" rx="28" fill="#F8F1EC"/>
+  <text x="24" y="16" fill="#2F2824" font-size="13" font-weight="700" text-anchor="start" class="body">
+    <tspan x="24" dy="0">9:41</tspan>
+  </text>
+  <rect x="300" y="18" width="42" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="346" y="18" width="20" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="55" fill="#744637" font-size="24" font-weight="800" text-anchor="middle" class="h1">
+    <tspan x="40" dy="0">‹</tspan>
+  </text>
+  <text x="72" y="46" fill="#2F2824" font-size="22" font-weight="800" text-anchor="start" class="">
+    <tspan x="72" dy="0">Фильтр по классу</tspan>
+  </text>
+  <text x="72" y="76" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="72" dy="0">Уровень бюджета и материалов</tspan>
+  </text>
+  <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="350" y="57" fill="#A96F58" font-size="18" font-weight="700" text-anchor="middle" class="h2">
+    <tspan x="350" dy="0">♡</tspan>
+  </text>
+  <rect x="20" y="124" width="350" height="124" rx="26" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="42" y="144" fill="#2F2824" font-size="20" font-weight="800" text-anchor="start" class="">
+    <tspan x="42" dy="0">Базовый</tspan>
+  </text>
+  <text x="42" y="178" fill="#806B62" font-size="13" font-weight="400" text-anchor="start" class="body">
+    <tspan x="42" dy="0">доступные материалы, простая</tspan>
+    <tspan x="42" dy="18">мебель</tspan>
+  </text>
+  <rect x="250" y="146" width="96" height="36" rx="16" fill="#EBD4CB"/>
+  <text x="298" y="156" fill="#744637" font-size="11" font-weight="700" text-anchor="middle" class="small">
+    <tspan x="298" dy="0">от 45 тыс. ₽</tspan>
+  </text>
+  <text x="334" y="200" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="334" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="276" width="350" height="124" rx="26" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="42" y="296" fill="#2F2824" font-size="20" font-weight="800" text-anchor="start" class="">
+    <tspan x="42" dy="0">Комфорт</tspan>
+  </text>
+  <text x="42" y="330" fill="#806B62" font-size="13" font-weight="400" text-anchor="start" class="body">
+    <tspan x="42" dy="0">кастомное хранение и</tspan>
+    <tspan x="42" dy="18">долговечные покрытия</tspan>
+  </text>
+  <rect x="250" y="298" width="96" height="36" rx="16" fill="#EBD4CB"/>
+  <text x="298" y="308" fill="#744637" font-size="11" font-weight="700" text-anchor="middle" class="small">
+    <tspan x="298" dy="0">от 90 тыс. ₽</tspan>
+  </text>
+  <text x="334" y="352" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="334" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="428" width="350" height="124" rx="26" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="42" y="448" fill="#2F2824" font-size="20" font-weight="800" text-anchor="start" class="">
+    <tspan x="42" dy="0">Премиум</tspan>
+  </text>
+  <text x="42" y="482" fill="#806B62" font-size="13" font-weight="400" text-anchor="start" class="body">
+    <tspan x="42" dy="0">сложная столярка, авторские</tspan>
+    <tspan x="42" dy="18">детали</tspan>
+  </text>
+  <rect x="250" y="450" width="96" height="36" rx="16" fill="#EBD4CB"/>
+  <text x="298" y="460" fill="#744637" font-size="11" font-weight="700" text-anchor="middle" class="small">
+    <tspan x="298" dy="0">от 180 тыс. ₽</tspan>
+  </text>
+  <text x="334" y="504" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="334" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="724" width="350" height="52" rx="18" fill="#A96F58" filter="url(#cardShadow)"/>
+  <text x="195.0" y="741" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
+    <tspan x="195.0" dy="0">Показать проекты класса Комфорт</tspan>
+  </text>
+  <a href="06_idea_catalog.svg" aria-label="Назад: catalog">
+    <title>Назад: catalog</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать класс Базовый">
+    <title>Выбрать класс Базовый</title>
+    <rect x="20" y="124" width="350" height="124" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать класс Комфорт">
+    <title>Выбрать класс Комфорт</title>
+    <rect x="20" y="276" width="350" height="124" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать класс Премиум">
+    <title>Выбрать класс Премиум</title>
+    <rect x="20" y="428" width="350" height="124" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Показать проекты класса Комфорт">
+    <title>Показать проекты класса Комфорт</title>
+    <rect x="20" y="724" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+</svg>

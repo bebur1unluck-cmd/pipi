@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <defs>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2F2824" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      text { font-family: Inter, Arial, sans-serif; dominant-baseline: hanging; }
+      .small { font-size: 11px; }
+      .body { font-size: 13px; }
+      .label { font-size: 12px; font-weight: 600; }
+      .h1 { font-size: 24px; font-weight: 800; }
+      .h2 { font-size: 18px; font-weight: 700; }
+      .btn { font-size: 14px; font-weight: 700; }
+    </style>
+  </defs>
+  <title>11 Избранное</title>
+  <rect width="390" height="844" rx="28" fill="#F8F1EC"/>
+  <text x="24" y="16" fill="#2F2824" font-size="13" font-weight="700" text-anchor="start" class="body">
+    <tspan x="24" dy="0">9:41</tspan>
+  </text>
+  <rect x="300" y="18" width="42" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="346" y="18" width="20" height="12" rx="6" fill="#2F2824" opacity="0.18"/>
+  <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="40" y="55" fill="#744637" font-size="24" font-weight="800" text-anchor="middle" class="h1">
+    <tspan x="40" dy="0">‹</tspan>
+  </text>
+  <text x="72" y="46" fill="#2F2824" font-size="22" font-weight="800" text-anchor="start" class="">
+    <tspan x="72" dy="0">Избранное</tspan>
+  </text>
+  <text x="72" y="76" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="72" dy="0">Проекты и специалисты, которые</tspan>
+    <tspan x="72" dy="16">понравились</tspan>
+  </text>
+  <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <text x="350" y="57" fill="#A96F58" font-size="18" font-weight="700" text-anchor="middle" class="h2">
+    <tspan x="350" dy="0">♡</tspan>
+  </text>
+  <rect x="20" y="100" width="350" height="48" rx="18" fill="#F3E5DD"/>
+  <rect x="24.0" y="104" width="167.0" height="40" rx="15" fill="#FFFDFC"/>
+  <text x="107.5" y="116" fill="#2F2824" font-size="13" font-weight="700" text-anchor="middle" class="body">
+    <tspan x="107.5" dy="0">Проекты</tspan>
+  </text>
+  <rect x="199.0" y="104" width="167.0" height="40" rx="15" fill="#F3E5DD"/>
+  <text x="282.5" y="116" fill="#806B62" font-size="13" font-weight="700" text-anchor="middle" class="body">
+    <tspan x="282.5" dy="0">Профи</tspan>
+  </text>
+  <rect x="20" y="162" width="350" height="146" rx="28" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <rect x="34" y="176" width="126" height="118" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <rect x="44.08" y="187.8" width="105.83999999999999" height="54.28" rx="16" fill="#DCEBE7"/>
+  <rect x="51.64" y="249.16" width="42.84" height="25.96" rx="9" fill="#D6B1A6"/>
+  <rect x="102.04" y="249.16" width="40.32" height="25.96" rx="9" fill="#CFA398"/>
+  <rect x="56.68" y="199.6" width="30.24" height="25.96" rx="10" fill="#FFFFFF" opacity="0.6"/>
+  <line x1="97.0" y1="194.88" x2="97.0" y2="279.84000000000003" stroke="#FFFFFF" stroke-width="1" opacity="0.7" stroke-linecap="round"/>
+  <text x="178" y="184" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="178" dy="0">Студия 29 м² для</tspan>
+    <tspan x="178" dy="23">пары</tspan>
+  </text>
+  <text x="178" y="240" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="178" dy="0">сохранено сегодня, 3</tspan>
+    <tspan x="178" dy="16">критерия совпали</tspan>
+  </text>
+  <rect x="178" y="278" width="86" height="22" rx="11" fill="#DCEBE7"/>
+  <text x="221" y="282" fill="#4D7C72" font-size="10" font-weight="700" text-anchor="middle" class="">
+    <tspan x="221" dy="0">совпадает</tspan>
+  </text>
+  <text x="340" y="220" fill="#A96F58" font-size="22" font-weight="800" text-anchor="middle" class="">
+    <tspan x="340" dy="0">›</tspan>
+  </text>
+  <rect x="20" y="346" width="350" height="98" rx="24" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <circle cx="67" cy="395" r="29" fill="#EBD4CB"/>
+  <text x="67" y="386" fill="#744637" font-size="14" font-weight="800" text-anchor="middle" class="">
+    <tspan x="67" dy="0">МК</tspan>
+  </text>
+  <text x="104" y="364" fill="#2F2824" font-size="17" font-weight="700" text-anchor="start" class="">
+    <tspan x="104" dy="0">Мария Климова</tspan>
+  </text>
+  <text x="104" y="396" fill="#806B62" font-size="12" font-weight="400" text-anchor="start" class="">
+    <tspan x="104" dy="0">дизайнер малых квартир</tspan>
+  </text>
+  <rect x="300" y="372" width="42" height="28" rx="14" fill="#EBD4CB"/>
+  <text x="321" y="379" fill="#744637" font-size="12" font-weight="800" text-anchor="middle" class="label">
+    <tspan x="321" dy="0">4.9</tspan>
+  </text>
+  <rect x="20" y="520" width="350" height="126" rx="24" fill="#DCEBE7"/>
+  <text x="40" y="544" fill="#2F2824" font-size="16" font-weight="700" text-anchor="start" class="">
+    <tspan x="40" dy="0">Совет</tspan>
+  </text>
+  <text x="40" y="580" fill="#806B62" font-size="14" font-weight="400" text-anchor="start" class="">
+    <tspan x="40" dy="0">Сохраняйте 3-5 решений, чтобы</tspan>
+    <tspan x="40" dy="19">сравнить планировки, материалы и</tspan>
+    <tspan x="40" dy="19">стоимость реализации.</tspan>
+  </text>
+  <rect x="20" y="786" width="350" height="48" rx="22" fill="#FFFDFC" filter="url(#cardShadow)"/>
+  <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFDFC"/>
+  <text x="65" y="803" fill="#806B62" font-size="11" font-weight="500" text-anchor="middle" class="small">
+    <tspan x="65" dy="0">Дом</tspan>
+  </text>
+  <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFDFC"/>
+  <text x="147" y="803" fill="#806B62" font-size="11" font-weight="500" text-anchor="middle" class="small">
+    <tspan x="147" dy="0">Каталог</tspan>
+  </text>
+  <rect x="196" y="794" width="66" height="32" rx="16" fill="#EBD4CB"/>
+  <text x="229" y="803" fill="#744637" font-size="11" font-weight="700" text-anchor="middle" class="small">
+    <tspan x="229" dy="0">Избранное</tspan>
+  </text>
+  <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFDFC"/>
+  <text x="311" y="803" fill="#806B62" font-size="11" font-weight="500" text-anchor="middle" class="small">
+    <tspan x="311" dy="0">Профи</tspan>
+  </text>
+  <a href="01_home.svg" aria-label="Назад: home">
+    <title>Назад: home</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Переключиться на специалистов">
+    <title>Переключиться на специалистов</title>
+    <rect x="195" y="104" width="171" height="40" rx="15" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Открыть сохраненный проект">
+    <title>Открыть сохраненный проект</title>
+    <rect x="20" y="162" width="350" height="146" rx="28" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть сохраненного специалиста">
+    <title>Открыть сохраненного специалиста</title>
+    <rect x="20" y="346" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="01_home.svg" aria-label="Нижняя навигация: Дом">
+    <title>Нижняя навигация: Дом</title>
+    <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Нижняя навигация: Каталог">
+    <title>Нижняя навигация: Каталог</title>
+    <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Нижняя навигация: Избранное">
+    <title>Нижняя навигация: Избранное</title>
+    <rect x="196" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Нижняя навигация: Профи">
+    <title>Нижняя навигация: Профи</title>
+    <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+</svg>
