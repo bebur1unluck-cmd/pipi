@@ -820,40 +820,41 @@ function link(node, destination) {
 
   const hotspot = figma.createRectangle();
   hotspot.name = "Hotspot -> " + destination.name;
+  node.parent.appendChild(hotspot);
   hotspot.x = node.x;
   hotspot.y = node.y;
   hotspot.resize(node.width, node.height);
   hotspot.cornerRadius = typeof node.cornerRadius === "number" ? node.cornerRadius : 0;
   hotspot.fills = [paint(COLORS.white, 0.01)];
   hotspot.reactions = reaction;
-  node.parent.appendChild(hotspot);
 }
 
 function rounded(parent, x, y, w, h, radius, color, opacity) {
   const node = figma.createRectangle();
+  parent.appendChild(node);
   node.x = x;
   node.y = y;
   node.resize(w, h);
   node.cornerRadius = radius;
   node.fills = [paint(color, opacity === undefined ? 1 : opacity)];
-  parent.appendChild(node);
   return node;
 }
 
 function line(parent, x1, y1, x2, y2, color, width, opacity) {
   const node = figma.createLine();
+  parent.appendChild(node);
   node.x = x1;
   node.y = y1;
   node.resize(Math.max(1, x2 - x1), Math.max(1, y2 - y1));
   node.rotation = x1 === x2 ? 90 : 0;
   node.strokes = [paint(color, opacity === undefined ? 1 : opacity)];
   node.strokeWeight = width;
-  parent.appendChild(node);
   return node;
 }
 
 function text(parent, value, x, y, w, opts = {}) {
   const node = figma.createText();
+  parent.appendChild(node);
   node.name = "Text / " + value.slice(0, 30);
   node.x = x;
   node.y = y;
@@ -866,7 +867,6 @@ function text(parent, value, x, y, w, opts = {}) {
   if (opts.align) {
     node.textAlignHorizontal = opts.align;
   }
-  parent.appendChild(node);
   return node;
 }
 
