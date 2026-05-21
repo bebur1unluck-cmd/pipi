@@ -103,4 +103,20 @@
   <text x="283.0" y="741" fill="#744637" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="283.0" dy="0">Найти профи</tspan>
   </text>
+  <a href="06_idea_catalog.svg" aria-label="Назад: catalog">
+    <title>Назад: catalog</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Сохранить проект в избранное">
+    <title>Сохранить проект в избранное</title>
+    <rect x="20" y="724" width="164" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Найти специалиста">
+    <title>Найти специалиста</title>
+    <rect x="196" y="724" width="174" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </svg>

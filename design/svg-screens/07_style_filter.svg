@@ -104,4 +104,32 @@
   <text x="195.0" y="739" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Применить стиль</tspan>
   </text>
+  <a href="06_idea_catalog.svg" aria-label="Назад: catalog">
+    <title>Назад: catalog</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать стиль Сканди">
+    <title>Выбрать стиль Сканди</title>
+    <rect x="20" y="142" width="166" height="144" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать стиль Japandi">
+    <title>Выбрать стиль Japandi</title>
+    <rect x="204" y="142" width="166" height="144" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать стиль Минимализм">
+    <title>Выбрать стиль Минимализм</title>
+    <rect x="20" y="310" width="166" height="144" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать стиль Современный">
+    <title>Выбрать стиль Современный</title>
+    <rect x="204" y="310" width="166" height="144" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Применить стиль">
+    <title>Применить стиль</title>
+    <rect x="20" y="722" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </svg>

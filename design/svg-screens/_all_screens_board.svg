@@ -71,6 +71,10 @@
   <text x="195.0" y="733" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Открыть прототип</tspan>
   </text>
+  <a href="01_home.svg" aria-label="Открыть домашнюю страницу">
+    <title>Открыть домашнюю страницу</title>
+    <rect x="44" y="716" width="302" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="502" y="28" fill="#9A9A9A" font-size="16" font-weight="700">01 home</text>
   <g transform="translate(502,56)">
@@ -190,6 +194,46 @@
   <text x="311" y="803" fill="#806B62" font-size="11" font-weight="500" text-anchor="middle" class="small">
     <tspan x="311" dy="0">Профи</tspan>
   </text>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="02_design_search.svg" aria-label="Подобрать дизайн">
+    <title>Подобрать дизайн</title>
+    <rect x="40" y="284" width="176" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="02_design_search.svg" aria-label="Карточка: поиск дизайна">
+    <title>Карточка: поиск дизайна</title>
+    <rect x="20" y="390" width="166" height="130" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Карточка: каталог идей">
+    <title>Карточка: каталог идей</title>
+    <rect x="204" y="390" width="166" height="130" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Карточка: специалисты">
+    <title>Карточка: специалисты</title>
+    <rect x="20" y="538" width="166" height="130" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Карточка: избранное">
+    <title>Карточка: избранное</title>
+    <rect x="204" y="538" width="166" height="130" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="01_home.svg" aria-label="Нижняя навигация: Дом">
+    <title>Нижняя навигация: Дом</title>
+    <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Нижняя навигация: Каталог">
+    <title>Нижняя навигация: Каталог</title>
+    <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Нижняя навигация: Избранное">
+    <title>Нижняя навигация: Избранное</title>
+    <rect x="196" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Нижняя навигация: Профи">
+    <title>Нижняя навигация: Профи</title>
+    <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="964" y="28" fill="#9A9A9A" font-size="16" font-weight="700">02 design search</text>
   <g transform="translate(964,56)">
@@ -298,6 +342,46 @@
   <text x="311" y="803" fill="#806B62" font-size="11" font-weight="500" text-anchor="middle" class="small">
     <tspan x="311" dy="0">Профи</tspan>
   </text>
+  <a href="01_home.svg" aria-label="Назад: home">
+    <title>Назад: home</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="04_room_design.svg" aria-label="Выбрать дизайн отдельной комнаты">
+    <title>Выбрать дизайн отдельной комнаты</title>
+    <rect x="20" y="270" width="350" height="94" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="05_housing_design.svg" aria-label="Выбрать дизайн жилья целиком">
+    <title>Выбрать дизайн жилья целиком</title>
+    <rect x="20" y="388" width="350" height="94" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="03_object_choice.svg" aria-label="Пройти короткий выбор объекта">
+    <title>Пройти короткий выбор объекта</title>
+    <rect x="20" y="572" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Смотреть каталог идей">
+    <title>Смотреть каталог идей</title>
+    <rect x="20" y="640" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="01_home.svg" aria-label="Нижняя навигация: Дом">
+    <title>Нижняя навигация: Дом</title>
+    <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Нижняя навигация: Каталог">
+    <title>Нижняя навигация: Каталог</title>
+    <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Нижняя навигация: Избранное">
+    <title>Нижняя навигация: Избранное</title>
+    <rect x="196" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Нижняя навигация: Профи">
+    <title>Нижняя навигация: Профи</title>
+    <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="1426" y="28" fill="#9A9A9A" font-size="16" font-weight="700">03 object choice</text>
   <g transform="translate(1426,56)">
@@ -424,6 +508,46 @@
   <text x="311" y="803" fill="#806B62" font-size="11" font-weight="500" text-anchor="middle" class="small">
     <tspan x="311" dy="0">Профи</tspan>
   </text>
+  <a href="02_design_search.svg" aria-label="Назад: search">
+    <title>Назад: search</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="04_room_design.svg" aria-label="Объект: кухня">
+    <title>Объект: кухня</title>
+    <rect x="20" y="178" width="350" height="108" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="05_housing_design.svg" aria-label="Объект: студия">
+    <title>Объект: студия</title>
+    <rect x="20" y="312" width="350" height="108" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="05_housing_design.svg" aria-label="Объект: вторичное жилье">
+    <title>Объект: вторичное жилье</title>
+    <rect x="20" y="446" width="350" height="108" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="04_room_design.svg" aria-label="Объект: сложная комната">
+    <title>Объект: сложная комната</title>
+    <rect x="20" y="580" width="350" height="108" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="01_home.svg" aria-label="Нижняя навигация: Дом">
+    <title>Нижняя навигация: Дом</title>
+    <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Нижняя навигация: Каталог">
+    <title>Нижняя навигация: Каталог</title>
+    <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Нижняя навигация: Избранное">
+    <title>Нижняя навигация: Избранное</title>
+    <rect x="196" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Нижняя навигация: Профи">
+    <title>Нижняя навигация: Профи</title>
+    <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="40" y="968" fill="#9A9A9A" font-size="16" font-weight="700">04 room design</text>
   <g transform="translate(40,996)">
@@ -550,6 +674,42 @@
   <text x="195.0" y="741" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Показать 24 варианта</tspan>
   </text>
+  <a href="03_object_choice.svg" aria-label="Назад: object">
+    <title>Назад: object</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Критерий: старые коммуникации">
+    <title>Критерий: старые коммуникации</title>
+    <rect x="20" y="312" width="170" height="36" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="09_criteria_filter.svg" aria-label="Критерий: узкая площадь">
+    <title>Критерий: узкая площадь</title>
+    <rect x="200" y="312" width="170" height="36" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="09_criteria_filter.svg" aria-label="Критерий: низкий потолок">
+    <title>Критерий: низкий потолок</title>
+    <rect x="20" y="360" width="170" height="36" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="09_criteria_filter.svg" aria-label="Критерий: много жильцов">
+    <title>Критерий: много жильцов</title>
+    <rect x="200" y="360" width="170" height="36" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Проект: кухня 8 м2">
+    <title>Проект: кухня 8 м2</title>
+    <rect x="20" y="480" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Проект: детская для двоих">
+    <title>Проект: детская для двоих</title>
+    <rect x="20" y="602" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Показать варианты в каталоге">
+    <title>Показать варианты в каталоге</title>
+    <rect x="20" y="724" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="502" y="968" fill="#9A9A9A" font-size="16" font-weight="700">05 housing design</text>
   <g transform="translate(502,996)">
@@ -671,6 +831,30 @@
   <text x="195.0" y="755" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Сформировать подборку</tspan>
   </text>
+  <a href="03_object_choice.svg" aria-label="Назад: object">
+    <title>Назад: object</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Фокус: зонирование малой площади">
+    <title>Фокус: зонирование малой площади</title>
+    <rect x="20" y="440" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Фокус: скрытое хранение">
+    <title>Фокус: скрытое хранение</title>
+    <rect x="20" y="536" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Фокус: бюджетная реализация">
+    <title>Фокус: бюджетная реализация</title>
+    <rect x="20" y="632" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Сформировать подборку">
+    <title>Сформировать подборку</title>
+    <rect x="20" y="738" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="964" y="968" fill="#9A9A9A" font-size="16" font-weight="700">06 idea catalog</text>
   <g transform="translate(964,996)">
@@ -812,6 +996,54 @@
   <text x="311" y="803" fill="#806B62" font-size="11" font-weight="500" text-anchor="middle" class="small">
     <tspan x="311" dy="0">Профи</tspan>
   </text>
+  <a href="01_home.svg" aria-label="Назад: home">
+    <title>Назад: home</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="07_style_filter.svg" aria-label="Фильтр по стилям">
+    <title>Фильтр по стилям</title>
+    <rect x="20" y="104" width="106" height="50" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="08_class_filter.svg" aria-label="Фильтр по классу">
+    <title>Фильтр по классу</title>
+    <rect x="142" y="104" width="106" height="50" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="09_criteria_filter.svg" aria-label="Фильтр по критериям">
+    <title>Фильтр по критериям</title>
+    <rect x="264" y="104" width="106" height="50" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Открыть проект: студия 29 м2">
+    <title>Открыть проект: студия 29 м2</title>
+    <rect x="20" y="172" width="350" height="146" rx="28" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Открыть проект: санузел в старом фонде">
+    <title>Открыть проект: санузел в старом фонде</title>
+    <rect x="20" y="344" width="350" height="146" rx="28" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Открыть проект: гостиная-кабинет">
+    <title>Открыть проект: гостиная-кабинет</title>
+    <rect x="20" y="516" width="350" height="146" rx="28" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="01_home.svg" aria-label="Нижняя навигация: Дом">
+    <title>Нижняя навигация: Дом</title>
+    <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Нижняя навигация: Каталог">
+    <title>Нижняя навигация: Каталог</title>
+    <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Нижняя навигация: Избранное">
+    <title>Нижняя навигация: Избранное</title>
+    <rect x="196" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Нижняя навигация: Профи">
+    <title>Нижняя навигация: Профи</title>
+    <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="1426" y="968" fill="#9A9A9A" font-size="16" font-weight="700">07 style filter</text>
   <g transform="translate(1426,996)">
@@ -920,6 +1152,34 @@
   <text x="195.0" y="739" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Применить стиль</tspan>
   </text>
+  <a href="06_idea_catalog.svg" aria-label="Назад: catalog">
+    <title>Назад: catalog</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать стиль Сканди">
+    <title>Выбрать стиль Сканди</title>
+    <rect x="20" y="142" width="166" height="144" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать стиль Japandi">
+    <title>Выбрать стиль Japandi</title>
+    <rect x="204" y="142" width="166" height="144" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать стиль Минимализм">
+    <title>Выбрать стиль Минимализм</title>
+    <rect x="20" y="310" width="166" height="144" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать стиль Современный">
+    <title>Выбрать стиль Современный</title>
+    <rect x="204" y="310" width="166" height="144" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Применить стиль">
+    <title>Применить стиль</title>
+    <rect x="20" y="722" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="40" y="1908" fill="#9A9A9A" font-size="16" font-weight="700">08 class filter</text>
   <g transform="translate(40,1936)">
@@ -1007,6 +1267,30 @@
   <text x="195.0" y="741" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Показать проекты класса Комфорт</tspan>
   </text>
+  <a href="06_idea_catalog.svg" aria-label="Назад: catalog">
+    <title>Назад: catalog</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать класс Базовый">
+    <title>Выбрать класс Базовый</title>
+    <rect x="20" y="124" width="350" height="124" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать класс Комфорт">
+    <title>Выбрать класс Комфорт</title>
+    <rect x="20" y="276" width="350" height="124" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Выбрать класс Премиум">
+    <title>Выбрать класс Премиум</title>
+    <rect x="20" y="428" width="350" height="124" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Показать проекты класса Комфорт">
+    <title>Показать проекты класса Комфорт</title>
+    <rect x="20" y="724" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="502" y="1908" fill="#9A9A9A" font-size="16" font-weight="700">09 criteria filter</text>
   <g transform="translate(502,1936)">
@@ -1114,6 +1398,18 @@
   <text x="195.0" y="741" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Найти подходящие кейсы</tspan>
   </text>
+  <a href="06_idea_catalog.svg" aria-label="Назад: catalog">
+    <title>Назад: catalog</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Найти подходящие кейсы">
+    <title>Найти подходящие кейсы</title>
+    <rect x="20" y="724" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="964" y="1908" fill="#9A9A9A" font-size="16" font-weight="700">10 project card</text>
   <g transform="translate(964,1936)">
@@ -1221,6 +1517,22 @@
   <text x="283.0" y="741" fill="#744637" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="283.0" dy="0">Найти профи</tspan>
   </text>
+  <a href="06_idea_catalog.svg" aria-label="Назад: catalog">
+    <title>Назад: catalog</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Сохранить проект в избранное">
+    <title>Сохранить проект в избранное</title>
+    <rect x="20" y="724" width="164" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Найти специалиста">
+    <title>Найти специалиста</title>
+    <rect x="196" y="724" width="174" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="1426" y="1908" fill="#9A9A9A" font-size="16" font-weight="700">11 favorites</text>
   <g transform="translate(1426,1936)">
@@ -1332,6 +1644,42 @@
   <text x="311" y="803" fill="#806B62" font-size="11" font-weight="500" text-anchor="middle" class="small">
     <tspan x="311" dy="0">Профи</tspan>
   </text>
+  <a href="01_home.svg" aria-label="Назад: home">
+    <title>Назад: home</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Переключиться на специалистов">
+    <title>Переключиться на специалистов</title>
+    <rect x="195" y="104" width="171" height="40" rx="15" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Открыть сохраненный проект">
+    <title>Открыть сохраненный проект</title>
+    <rect x="20" y="162" width="350" height="146" rx="28" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть сохраненного специалиста">
+    <title>Открыть сохраненного специалиста</title>
+    <rect x="20" y="346" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="01_home.svg" aria-label="Нижняя навигация: Дом">
+    <title>Нижняя навигация: Дом</title>
+    <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Нижняя навигация: Каталог">
+    <title>Нижняя навигация: Каталог</title>
+    <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Нижняя навигация: Избранное">
+    <title>Нижняя навигация: Избранное</title>
+    <rect x="196" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Нижняя навигация: Профи">
+    <title>Нижняя навигация: Профи</title>
+    <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="40" y="2848" fill="#9A9A9A" font-size="16" font-weight="700">12 specialists</text>
   <g transform="translate(40,2876)">
@@ -1460,6 +1808,50 @@
   <text x="311" y="803" fill="#744637" font-size="11" font-weight="700" text-anchor="middle" class="small">
     <tspan x="311" dy="0">Профи</tspan>
   </text>
+  <a href="01_home.svg" aria-label="Назад: home">
+    <title>Назад: home</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="13_problem_search.svg" aria-label="Поиск специалиста по проблеме">
+    <title>Поиск специалиста по проблеме</title>
+    <rect x="20" y="104" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="14_engineers.svg" aria-label="Открыть инженеров">
+    <title>Открыть инженеров</title>
+    <rect x="20" y="184" width="350" height="112" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="15_designers.svg" aria-label="Открыть дизайнеров">
+    <title>Открыть дизайнеров</title>
+    <rect x="20" y="324" width="350" height="112" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Марии Климовой">
+    <title>Открыть профиль Марии Климовой</title>
+    <rect x="20" y="528" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Антона Ветрова">
+    <title>Открыть профиль Антона Ветрова</title>
+    <rect x="20" y="650" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="01_home.svg" aria-label="Нижняя навигация: Дом">
+    <title>Нижняя навигация: Дом</title>
+    <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Нижняя навигация: Каталог">
+    <title>Нижняя навигация: Каталог</title>
+    <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Нижняя навигация: Избранное">
+    <title>Нижняя навигация: Избранное</title>
+    <rect x="196" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Нижняя навигация: Профи">
+    <title>Нижняя навигация: Профи</title>
+    <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="502" y="2848" fill="#9A9A9A" font-size="16" font-weight="700">13 problem search</text>
   <g transform="translate(502,2876)">
@@ -1564,6 +1956,34 @@
   <text x="321" y="659" fill="#744637" font-size="12" font-weight="800" text-anchor="middle" class="label">
     <tspan x="321" dy="0">4.9</tspan>
   </text>
+  <a href="12_specialists.svg" aria-label="Назад: specialists">
+    <title>Назад: specialists</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="14_engineers.svg" aria-label="Проблема: старые коммуникации">
+    <title>Проблема: старые коммуникации</title>
+    <rect x="20" y="140" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="14_engineers.svg" aria-label="Проблема: несущие стены">
+    <title>Проблема: несущие стены</title>
+    <rect x="20" y="236" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="15_designers.svg" aria-label="Проблема: мало места для жильцов">
+    <title>Проблема: мало места для жильцов</title>
+    <rect x="20" y="332" width="350" height="76" rx="22" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Антона Ветрова">
+    <title>Открыть профиль Антона Ветрова</title>
+    <rect x="20" y="504" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Марии Климовой">
+    <title>Открыть профиль Марии Климовой</title>
+    <rect x="20" y="626" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="964" y="2848" fill="#9A9A9A" font-size="16" font-weight="700">14 engineers</text>
   <g transform="translate(964,2876)">
@@ -1668,6 +2088,30 @@
   <text x="195.0" y="741" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Заполнить задачу для инженера</tspan>
   </text>
+  <a href="12_specialists.svg" aria-label="Назад: specialists">
+    <title>Назад: specialists</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Антона Ветрова">
+    <title>Открыть профиль Антона Ветрова</title>
+    <rect x="20" y="244" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Ирины Соколовой">
+    <title>Открыть профиль Ирины Соколовой</title>
+    <rect x="20" y="366" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Павла Громова">
+    <title>Открыть профиль Павла Громова</title>
+    <rect x="20" y="488" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="17_specialist_request.svg" aria-label="Заполнить задачу для инженера">
+    <title>Заполнить задачу для инженера</title>
+    <rect x="20" y="724" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="1426" y="2848" fill="#9A9A9A" font-size="16" font-weight="700">15 designers</text>
   <g transform="translate(1426,2876)">
@@ -1772,6 +2216,30 @@
   <text x="195.0" y="741" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Подобрать дизайнера</tspan>
   </text>
+  <a href="12_specialists.svg" aria-label="Назад: specialists">
+    <title>Назад: specialists</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Марии Климовой">
+    <title>Открыть профиль Марии Климовой</title>
+    <rect x="20" y="244" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Олега Нестерова">
+    <title>Открыть профиль Олега Нестерова</title>
+    <rect x="20" y="366" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Веры Лисиной">
+    <title>Открыть профиль Веры Лисиной</title>
+    <rect x="20" y="488" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="17_specialist_request.svg" aria-label="Подобрать дизайнера">
+    <title>Подобрать дизайнера</title>
+    <rect x="20" y="724" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="40" y="3788" fill="#9A9A9A" font-size="16" font-weight="700">16 master profile</text>
   <g transform="translate(40,3816)">
@@ -1894,6 +2362,30 @@
   <text x="284.0" y="741" fill="#744637" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="284.0" dy="0">В избранное</tspan>
   </text>
+  <a href="12_specialists.svg" aria-label="Назад: specialists">
+    <title>Назад: specialists</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Открыть кейс специалиста: студия">
+    <title>Открыть кейс специалиста: студия</title>
+    <rect x="20" y="462" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="10_project_card.svg" aria-label="Открыть кейс специалиста: кухня">
+    <title>Открыть кейс специалиста: кухня</title>
+    <rect x="20" y="584" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="17_specialist_request.svg" aria-label="Оставить заявку специалисту">
+    <title>Оставить заявку специалисту</title>
+    <rect x="20" y="724" width="166" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Сохранить специалиста в избранное">
+    <title>Сохранить специалиста в избранное</title>
+    <rect x="198" y="724" width="172" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
   <text x="502" y="3788" fill="#9A9A9A" font-size="16" font-weight="700">17 specialist request</text>
   <g transform="translate(502,3816)">
@@ -1971,5 +2463,17 @@
   <text x="195.0" y="741" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle" class="">
     <tspan x="195.0" dy="0">Отправить заявку</tspan>
   </text>
+  <a href="16_master_profile.svg" aria-label="Назад: profile">
+    <title>Назад: profile</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Отправить заявку">
+    <title>Отправить заявку</title>
+    <rect x="20" y="724" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </g>
 </svg>

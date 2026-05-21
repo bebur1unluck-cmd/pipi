@@ -122,4 +122,44 @@
   <text x="311" y="803" fill="#806B62" font-size="11" font-weight="500" text-anchor="middle" class="small">
     <tspan x="311" dy="0">Профи</tspan>
   </text>
+  <a href="02_design_search.svg" aria-label="Назад: search">
+    <title>Назад: search</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="04_room_design.svg" aria-label="Объект: кухня">
+    <title>Объект: кухня</title>
+    <rect x="20" y="178" width="350" height="108" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="05_housing_design.svg" aria-label="Объект: студия">
+    <title>Объект: студия</title>
+    <rect x="20" y="312" width="350" height="108" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="05_housing_design.svg" aria-label="Объект: вторичное жилье">
+    <title>Объект: вторичное жилье</title>
+    <rect x="20" y="446" width="350" height="108" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="04_room_design.svg" aria-label="Объект: сложная комната">
+    <title>Объект: сложная комната</title>
+    <rect x="20" y="580" width="350" height="108" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="01_home.svg" aria-label="Нижняя навигация: Дом">
+    <title>Нижняя навигация: Дом</title>
+    <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Нижняя навигация: Каталог">
+    <title>Нижняя навигация: Каталог</title>
+    <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Нижняя навигация: Избранное">
+    <title>Нижняя навигация: Избранное</title>
+    <rect x="196" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Нижняя навигация: Профи">
+    <title>Нижняя навигация: Профи</title>
+    <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </svg>

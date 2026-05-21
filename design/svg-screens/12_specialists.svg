@@ -124,4 +124,48 @@
   <text x="311" y="803" fill="#744637" font-size="11" font-weight="700" text-anchor="middle" class="small">
     <tspan x="311" dy="0">Профи</tspan>
   </text>
+  <a href="01_home.svg" aria-label="Назад: home">
+    <title>Назад: home</title>
+    <rect x="20" y="48" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Перейти в избранное">
+    <title>Перейти в избранное</title>
+    <rect x="330" y="50" width="40" height="40" rx="14" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="13_problem_search.svg" aria-label="Поиск специалиста по проблеме">
+    <title>Поиск специалиста по проблеме</title>
+    <rect x="20" y="104" width="350" height="52" rx="18" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="14_engineers.svg" aria-label="Открыть инженеров">
+    <title>Открыть инженеров</title>
+    <rect x="20" y="184" width="350" height="112" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="15_designers.svg" aria-label="Открыть дизайнеров">
+    <title>Открыть дизайнеров</title>
+    <rect x="20" y="324" width="350" height="112" rx="26" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Марии Климовой">
+    <title>Открыть профиль Марии Климовой</title>
+    <rect x="20" y="528" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="16_master_profile.svg" aria-label="Открыть профиль Антона Ветрова">
+    <title>Открыть профиль Антона Ветрова</title>
+    <rect x="20" y="650" width="350" height="98" rx="24" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="01_home.svg" aria-label="Нижняя навигация: Дом">
+    <title>Нижняя навигация: Дом</title>
+    <rect x="32" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="06_idea_catalog.svg" aria-label="Нижняя навигация: Каталог">
+    <title>Нижняя навигация: Каталог</title>
+    <rect x="114" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="11_favorites.svg" aria-label="Нижняя навигация: Избранное">
+    <title>Нижняя навигация: Избранное</title>
+    <rect x="196" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
+  <a href="12_specialists.svg" aria-label="Нижняя навигация: Профи">
+    <title>Нижняя навигация: Профи</title>
+    <rect x="278" y="794" width="66" height="32" rx="16" fill="#FFFFFF" opacity="0.001" style="cursor:pointer;"/>
+  </a>
 </svg>

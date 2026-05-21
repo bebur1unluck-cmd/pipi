@@ -3,7 +3,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from html import escape
 from pathlib import Path
-import re
 
 
 ROOT = Path(__file__).resolve().parent
@@ -33,13 +32,18 @@ COLORS = {
 class Svg:
     title: str
     parts: list[str]
+    hotspots: list[str]
 
     def __init__(self, title: str) -> None:
         self.title = title
         self.parts = []
+        self.hotspots = []
 
     def add(self, value: str) -> None:
         self.parts.append(value)
+
+    def add_hotspot(self, value: str) -> None:
+        self.hotspots.append(value)
 
     def render(self) -> str:
         return "\n".join(
@@ -62,15 +66,49 @@ class Svg:
                 f'  <title>{escape(self.title)}</title>',
                 f'  <rect width="{W}" height="{H}" rx="28" fill="{COLORS["bg"]}"/>',
                 *self.parts,
+                *self.hotspots,
                 "</svg>",
                 "",
             ]
         )
 
 
-def slug(name: str) -> str:
-    value = re.sub(r"[^a-zA-Z0-9]+", "_", name.lower()).strip("_")
-    return value
+LINK_TARGETS = {
+    "overview": "00_overview.svg",
+    "home": "01_home.svg",
+    "search": "02_design_search.svg",
+    "object": "03_object_choice.svg",
+    "room": "04_room_design.svg",
+    "housing": "05_housing_design.svg",
+    "catalog": "06_idea_catalog.svg",
+    "style": "07_style_filter.svg",
+    "class": "08_class_filter.svg",
+    "criteria": "09_criteria_filter.svg",
+    "project": "10_project_card.svg",
+    "favorites": "11_favorites.svg",
+    "specialists": "12_specialists.svg",
+    "problem": "13_problem_search.svg",
+    "engineers": "14_engineers.svg",
+    "designers": "15_designers.svg",
+    "profile": "16_master_profile.svg",
+    "request": "17_specialist_request.svg",
+}
+
+
+def target(key_or_file: str) -> str:
+    return LINK_TARGETS.get(key_or_file, key_or_file)
+
+
+def hotspot(s: Svg, x: float, y: float, w: float, h: float, href: str, label: str, rx: float = 18) -> None:
+    href_value = escape(target(href), quote=True)
+    label_value = escape(label)
+    s.add_hotspot(
+        f'  <a href="{href_value}" aria-label="{label_value}">\n'
+        f'    <title>{label_value}</title>\n'
+        f'    <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="#FFFFFF" opacity="0.001" '
+        f'style="cursor:pointer;"/>\n'
+        f'  </a>'
+    )
 
 
 def rect(s: Svg, x: float, y: float, w: float, h: float, fill: str, rx: float = 0, stroke: str | None = None,
@@ -155,11 +193,13 @@ def header(s: Svg, title: str, subtitle: str, back_label: str | None = None, fav
     if back_label:
         rect(s, 20, 48, 40, 40, COLORS["surface"], rx=14, shadow=True)
         txt(s, "‹", 40, 55, COLORS["primary_dark"], size=24, weight=800, align="middle")
+        hotspot(s, 20, 48, 40, 40, back_label, f"Назад: {back_label}", rx=14)
     txt(s, title, start, 46, size=22, weight=800, width=230)
     txt(s, subtitle, start, 76, COLORS["muted"], size=12, width=255)
     if favorite:
         rect(s, 330, 50, 40, 40, COLORS["surface"], rx=14, shadow=True)
         txt(s, "♡", 350, 57, COLORS["primary"], size=18, weight=700, align="middle")
+        hotspot(s, 330, 50, 40, 40, "favorites", "Перейти в избранное", rx=14)
 
 
 def button(s: Svg, label: str, x: float, y: float, w: float, variant: str = "primary") -> None:
@@ -258,6 +298,7 @@ def bottom_nav(s: Svg, active: str) -> None:
         rect(s, x, 794, 66, 32, COLORS["primary_soft"] if key == active else COLORS["surface"], rx=16)
         txt(s, label, x + 33, 803, COLORS["primary_dark"] if key == active else COLORS["muted"], size=11,
             weight=700 if key == active else 500, align="middle")
+        hotspot(s, x, 794, 66, 32, key, f"Нижняя навигация: {label}", rx=16)
 
 
 def metrics(s: Svg, y: float, items: list[tuple[str, str]]) -> None:
@@ -294,6 +335,7 @@ def render_cover() -> Svg:
         txt(s, "✓", 40, y + 4, COLORS["accent"], size=12, weight=800, align="middle")
         txt(s, item, 62, y, size=13, width=285)
     button(s, "Открыть прототип", 44, 716, 302)
+    hotspot(s, 44, 716, 302, 52, "home", "Открыть домашнюю страницу")
     return s
 
 
@@ -305,11 +347,16 @@ def render_home() -> Svg:
     txt(s, "Выберите комнату, стиль и технические ограничения.", 40, 202, COLORS["primary_dark"], size=13, width=205)
     room_mock(s, 236, 132, 110, 112)
     button(s, "Подобрать дизайн", 40, 284, 176)
+    hotspot(s, 40, 284, 176, 52, "search", "Подобрать дизайн")
     section(s, "Быстрый доступ", 354)
     card(s, 20, 390, 166, 130, "Поиск дизайна", "По объекту, стилю и состоянию", "01")
     card(s, 204, 390, 166, 130, "Каталог идей", "Готовые кейсы и решения", "02")
     card(s, 20, 538, 166, 130, "Специалисты", "Дизайнеры и инженеры", "03")
     card(s, 204, 538, 166, 130, "Избранное", "Сохраненные проекты", "04")
+    hotspot(s, 20, 390, 166, 130, "search", "Карточка: поиск дизайна", rx=24)
+    hotspot(s, 204, 390, 166, 130, "catalog", "Карточка: каталог идей", rx=24)
+    hotspot(s, 20, 538, 166, 130, "specialists", "Карточка: специалисты", rx=24)
+    hotspot(s, 204, 538, 166, 130, "favorites", "Карточка: избранное", rx=24)
     bottom_nav(s, "home")
     return s
 
@@ -323,9 +370,13 @@ def render_design_search() -> Svg:
     section(s, "Что проектируем?", 234)
     choice(s, 270, "Отдельную комнату", "Кухня, спальня, детская, санузел", "Комната")
     choice(s, 388, "Жилье целиком", "Студия, квартира, дом, апартаменты", "Жилье")
+    hotspot(s, 20, 270, 350, 94, "room", "Выбрать дизайн отдельной комнаты", rx=24)
+    hotspot(s, 20, 388, 350, 94, "housing", "Выбрать дизайн жилья целиком", rx=24)
     section(s, "Нужна помощь с выбором?", 536)
     button(s, "Пройти короткий выбор объекта", 20, 572, 350, "secondary")
     button(s, "Смотреть каталог идей", 20, 640, 350, "soft")
+    hotspot(s, 20, 572, 350, 52, "object", "Пройти короткий выбор объекта")
+    hotspot(s, 20, 640, 350, 52, "catalog", "Смотреть каталог идей")
     bottom_nav(s, "home")
     return s
 
@@ -347,6 +398,10 @@ def render_object_choice() -> Svg:
     object_card(s, 312, "Студия", "зонирование малого пространства", "warm")
     object_card(s, 446, "Вторичное жилье", "коммуникации и несущие стены", "warm")
     object_card(s, 580, "Сложная комната", "ниши, низкие потолки, старые трубы", "cool")
+    hotspot(s, 20, 178, 350, 108, "room", "Объект: кухня", rx=24)
+    hotspot(s, 20, 312, 350, 108, "housing", "Объект: студия", rx=24)
+    hotspot(s, 20, 446, 350, 108, "housing", "Объект: вторичное жилье", rx=24)
+    hotspot(s, 20, 580, 350, 108, "room", "Объект: сложная комната", rx=24)
     bottom_nav(s, "home")
     return s
 
@@ -366,10 +421,17 @@ def render_room_design() -> Svg:
     chip_grid(s, ["Кухня", "Гостиная", "Спальня", "Детская", "Санузел", "Рабочая зона"], 140, 2)
     section(s, "Технические проблемы", 276)
     chip_grid(s, ["старые коммуникации", "узкая площадь", "низкий потолок", "много жильцов"], 312, 2, 2)
+    hotspot(s, 20, 312, 170, 36, "project", "Критерий: старые коммуникации", rx=18)
+    hotspot(s, 200, 312, 170, 36, "criteria", "Критерий: узкая площадь", rx=18)
+    hotspot(s, 20, 360, 170, 36, "criteria", "Критерий: низкий потолок", rx=18)
+    hotspot(s, 200, 360, 170, 36, "criteria", "Критерий: много жильцов", rx=18)
     section(s, "Рекомендуемые решения", 444)
     small_project(s, 480, "Кухня 8 м² с переносом хранения", "Сканди + инженерные ограничения")
     small_project(s, 602, "Детская для двоих", "Зонирование, хранение, тихая зона")
     button(s, "Показать 24 варианта", 20, 724, 350)
+    hotspot(s, 20, 480, 350, 98, "project", "Проект: кухня 8 м2", rx=24)
+    hotspot(s, 20, 602, 350, 98, "project", "Проект: детская для двоих", rx=24)
+    hotspot(s, 20, 724, 350, 52, "catalog", "Показать варианты в каталоге")
     return s
 
 
@@ -385,6 +447,10 @@ def render_housing_design() -> Svg:
     wide_filter(s, 536, "Много скрытого хранения", "Шкафы до потолка, антресоли, ниши")
     wide_filter(s, 632, "Бюджетная реализация", "Материалы и мебель из доступных линеек")
     button(s, "Сформировать подборку", 20, 738, 350)
+    hotspot(s, 20, 440, 350, 76, "project", "Фокус: зонирование малой площади", rx=22)
+    hotspot(s, 20, 536, 350, 76, "project", "Фокус: скрытое хранение", rx=22)
+    hotspot(s, 20, 632, 350, 76, "catalog", "Фокус: бюджетная реализация", rx=22)
+    hotspot(s, 20, 738, 350, 52, "catalog", "Сформировать подборку")
     return s
 
 
@@ -401,9 +467,15 @@ def render_catalog() -> Svg:
     small_filter(s, 20, "Стиль", "Japandi")
     small_filter(s, 142, "Класс", "Комфорт")
     small_filter(s, 264, "Критерии", "4")
+    hotspot(s, 20, 104, 106, 50, "style", "Фильтр по стилям", rx=18)
+    hotspot(s, 142, 104, 106, 50, "class", "Фильтр по классу", rx=18)
+    hotspot(s, 264, 104, 106, 50, "criteria", "Фильтр по критериям", rx=18)
     project_card(s, 172, "Студия 29 м² для пары", "Japandi, хранение, светлая палитра")
     project_card(s, 344, "Санузел в старом фонде", "коммуникации, влагостойкие материалы")
     project_card(s, 516, "Гостиная-кабинет", "зонирование без перегородок")
+    hotspot(s, 20, 172, 350, 146, "project", "Открыть проект: студия 29 м2", rx=28)
+    hotspot(s, 20, 344, 350, 146, "project", "Открыть проект: санузел в старом фонде", rx=28)
+    hotspot(s, 20, 516, 350, 146, "project", "Открыть проект: гостиная-кабинет", rx=28)
     bottom_nav(s, "catalog")
     return s
 
@@ -422,9 +494,14 @@ def render_style_filter() -> Svg:
     style_tile(s, 204, 142, "Japandi", COLORS["accent_soft"])
     style_tile(s, 20, 310, "Минимализм", "#EDE9DF")
     style_tile(s, 204, 310, "Современный", "#E6DDD8")
+    hotspot(s, 20, 142, 166, 144, "catalog", "Выбрать стиль Сканди", rx=26)
+    hotspot(s, 204, 142, 166, 144, "catalog", "Выбрать стиль Japandi", rx=26)
+    hotspot(s, 20, 310, 166, 144, "catalog", "Выбрать стиль Минимализм", rx=26)
+    hotspot(s, 204, 310, 166, 144, "catalog", "Выбрать стиль Современный", rx=26)
     section(s, "Настроение", 500)
     chip_grid(s, ["теплый", "нейтральный", "контрастный", "натуральный"], 536, 2)
     button(s, "Применить стиль", 20, 722, 350)
+    hotspot(s, 20, 722, 350, 52, "catalog", "Применить стиль")
     return s
 
 
@@ -442,6 +519,10 @@ def render_class_filter() -> Svg:
     tariff(s, 276, "Комфорт", "кастомное хранение и долговечные покрытия", "от 90 тыс. ₽")
     tariff(s, 428, "Премиум", "сложная столярка, авторские детали", "от 180 тыс. ₽")
     button(s, "Показать проекты класса Комфорт", 20, 724, 350)
+    hotspot(s, 20, 124, 350, 124, "catalog", "Выбрать класс Базовый", rx=26)
+    hotspot(s, 20, 276, 350, 124, "catalog", "Выбрать класс Комфорт", rx=26)
+    hotspot(s, 20, 428, 350, 124, "catalog", "Выбрать класс Премиум", rx=26)
+    hotspot(s, 20, 724, 350, 52, "catalog", "Показать проекты класса Комфорт")
     return s
 
 
@@ -464,6 +545,7 @@ def render_criteria_filter() -> Svg:
     section(s, "Особенности конструкций", 420)
     chip_grid(s, ["несущие стены", "старые трубы", "мало света", "низкий потолок"], 456, 2)
     button(s, "Найти подходящие кейсы", 20, 724, 350)
+    hotspot(s, 20, 724, 350, 52, "project", "Найти подходящие кейсы")
     return s
 
 
@@ -485,6 +567,8 @@ def render_project() -> Svg:
         txt(s, item, 50, y, size=13, width=300)
     button(s, "Сохранить", 20, 724, 164)
     button(s, "Найти профи", 196, 724, 174, "secondary")
+    hotspot(s, 20, 724, 164, 52, "favorites", "Сохранить проект в избранное")
+    hotspot(s, 196, 724, 174, 52, "specialists", "Найти специалиста")
     return s
 
 
@@ -492,8 +576,11 @@ def render_favorites() -> Svg:
     s = Svg("11 Избранное")
     header(s, "Избранное", "Проекты и специалисты, которые понравились", "home")
     segmented(s, 100, ["Проекты", "Профи"], 0)
+    hotspot(s, 195, 104, 171, 40, "specialists", "Переключиться на специалистов", rx=15)
     project_card(s, 162, "Студия 29 м² для пары", "сохранено сегодня, 3 критерия совпали")
     master_card(s, 346, "Мария Климова", "дизайнер малых квартир")
+    hotspot(s, 20, 162, 350, 146, "project", "Открыть сохраненный проект", rx=28)
+    hotspot(s, 20, 346, 350, 98, "profile", "Открыть сохраненного специалиста", rx=24)
     rect(s, 20, 520, 350, 126, COLORS["accent_soft"], rx=24)
     txt(s, "Совет", 40, 544, size=16, weight=700)
     txt(s, "Сохраняйте 3-5 решений, чтобы сравнить планировки, материалы и стоимость реализации.",
@@ -515,11 +602,16 @@ def render_specialists() -> Svg:
     s = Svg("12 Специалисты")
     header(s, "Специалисты", "Проверенные дизайнеры и инженеры", "home")
     button(s, "Поиск по проблеме", 20, 104, 350, "secondary")
+    hotspot(s, 20, 104, 350, 52, "problem", "Поиск специалиста по проблеме")
     pro_category(s, 184, "Инженеры", "перепланировки, коммуникации, конструктив", "12 профилей", "ИН")
     pro_category(s, 324, "Дизайнеры", "малые площади, стиль, подбор мебели", "28 профилей", "ДЗ")
+    hotspot(s, 20, 184, 350, 112, "engineers", "Открыть инженеров", rx=26)
+    hotspot(s, 20, 324, 350, 112, "designers", "Открыть дизайнеров", rx=26)
     section(s, "Рекомендуемые", 492)
     master_card(s, 528, "Мария Климова", "малые квартиры и студии")
     master_card(s, 650, "Антон Ветров", "инженер по перепланировкам")
+    hotspot(s, 20, 528, 350, 98, "profile", "Открыть профиль Марии Климовой", rx=24)
+    hotspot(s, 20, 650, 350, 98, "profile", "Открыть профиль Антона Ветрова", rx=24)
     bottom_nav(s, "specialists")
     return s
 
@@ -542,9 +634,14 @@ def render_problem_search() -> Svg:
     wide_filter(s, 140, "Старые коммуникации", "нужен инженер и дизайнер санузла")
     wide_filter(s, 236, "Несущие стены", "проверить возможность перепланировки")
     wide_filter(s, 332, "Мало места для жильцов", "планировка и хранение")
+    hotspot(s, 20, 140, 350, 76, "engineers", "Проблема: старые коммуникации", rx=22)
+    hotspot(s, 20, 236, 350, 76, "engineers", "Проблема: несущие стены", rx=22)
+    hotspot(s, 20, 332, 350, 76, "designers", "Проблема: мало места для жильцов", rx=22)
     section(s, "Подходящие профили", 468)
     master_card(s, 504, "Антон Ветров", "конструктив и согласования")
     master_card(s, 626, "Мария Климова", "зонирование малых площадей")
+    hotspot(s, 20, 504, 350, 98, "profile", "Открыть профиль Антона Ветрова", rx=24)
+    hotspot(s, 20, 626, 350, 98, "profile", "Открыть профиль Марии Климовой", rx=24)
     return s
 
 
@@ -556,6 +653,10 @@ def render_engineers() -> Svg:
     master_card(s, 366, "Ирина Соколова", "водоснабжение и вентиляция")
     master_card(s, 488, "Павел Громов", "обследование старого фонда")
     button(s, "Заполнить задачу для инженера", 20, 724, 350)
+    hotspot(s, 20, 244, 350, 98, "profile", "Открыть профиль Антона Ветрова", rx=24)
+    hotspot(s, 20, 366, 350, 98, "profile", "Открыть профиль Ирины Соколовой", rx=24)
+    hotspot(s, 20, 488, 350, 98, "profile", "Открыть профиль Павла Громова", rx=24)
+    hotspot(s, 20, 724, 350, 52, "request", "Заполнить задачу для инженера")
     return s
 
 
@@ -567,6 +668,10 @@ def render_designers() -> Svg:
     master_card(s, 366, "Олег Нестеров", "современный стиль и хранение")
     master_card(s, 488, "Вера Лисина", "детские и многофункциональные комнаты")
     button(s, "Подобрать дизайнера", 20, 724, 350)
+    hotspot(s, 20, 244, 350, 98, "profile", "Открыть профиль Марии Климовой", rx=24)
+    hotspot(s, 20, 366, 350, 98, "profile", "Открыть профиль Олега Нестерова", rx=24)
+    hotspot(s, 20, 488, 350, 98, "profile", "Открыть профиль Веры Лисиной", rx=24)
+    hotspot(s, 20, 724, 350, 52, "request", "Подобрать дизайнера")
     return s
 
 
@@ -586,6 +691,10 @@ def render_master_profile() -> Svg:
     small_project(s, 584, "Кухня в старом фонде", "8 м², коммуникации")
     button(s, "Оставить заявку", 20, 724, 166)
     button(s, "В избранное", 198, 724, 172, "secondary")
+    hotspot(s, 20, 462, 350, 98, "project", "Открыть кейс специалиста: студия", rx=24)
+    hotspot(s, 20, 584, 350, 98, "project", "Открыть кейс специалиста: кухня", rx=24)
+    hotspot(s, 20, 724, 166, 52, "request", "Оставить заявку специалисту")
+    hotspot(s, 198, 724, 172, 52, "favorites", "Сохранить специалиста в избранное")
     return s
 
 
@@ -600,6 +709,7 @@ def render_request() -> Svg:
     txt(s, "После отправки специалист получит сохраненные проекты и критерии подбора.",
         40, 558, COLORS["text"], size=14, width=290)
     button(s, "Отправить заявку", 20, 724, 350)
+    hotspot(s, 20, 724, 350, 52, "favorites", "Отправить заявку")
     return s
 
 
