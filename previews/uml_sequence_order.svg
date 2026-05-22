@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="650" viewBox="0 0 1320 650">
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#111"/></marker></defs>
+<style>text{font-family:Arial, sans-serif;font-size:13px} .title{font-family:'Times New Roman',serif;font-size:24px;font-weight:bold} .small{font-size:11px} .box{fill:#fff;stroke:#111;stroke-width:1.4} .dash{stroke-dasharray:6 4}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="660.0" y="30" text-anchor="middle" class="title">Рисунок 4 – Диаграмма последовательности</text>
+<rect class="box" x="60" y="80" width="130" height="42" rx="8"/>
+<text x="125.0" y="94.0" text-anchor="middle" class="">Пользователь</text>
+<line x1="125.0" y1="122" x2="125.0" y2="540" stroke="#111" stroke-dasharray="6 4"/>
+<rect class="box" x="250" y="80" width="135" height="42" rx="8"/>
+<text x="317.5" y="94.0" text-anchor="middle" class="">Окно товаров</text>
+<line x1="317.5" y1="122" x2="317.5" y2="540" stroke="#111" stroke-dasharray="6 4"/>
+<rect class="box" x="470" y="80" width="135" height="42" rx="8"/>
+<text x="537.5" y="94.0" text-anchor="middle" class="">Окно заказа</text>
+<line x1="537.5" y1="122" x2="537.5" y2="540" stroke="#111" stroke-dasharray="6 4"/>
+<rect class="box" x="690" y="80" width="150" height="42" rx="8"/>
+<text x="765.0" y="94.0" text-anchor="middle" class="">Сервис заказов</text>
+<line x1="765.0" y1="122" x2="765.0" y2="540" stroke="#111" stroke-dasharray="6 4"/>
+<rect class="box" x="940" y="80" width="130" height="42" rx="8"/>
+<text x="1005.0" y="94.0" text-anchor="middle" class="">Память / БД</text>
+<line x1="1005.0" y1="122" x2="1005.0" y2="540" stroke="#111" stroke-dasharray="6 4"/>
+<rect class="box" x="1130" y="80" width="120" height="42" rx="8"/>
+<text x="1190.0" y="94.0" text-anchor="middle" class="">Принтер</text>
+<line x1="1190.0" y1="122" x2="1190.0" y2="540" stroke="#111" stroke-dasharray="6 4"/>
+<line x1="125" y1="170" x2="317" y2="170" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="221.0" y="166.0" text-anchor="middle" class="small">Открыть список товаров</text>
+
+<line x1="317" y1="210" x2="125" y2="210" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)" class="dash"/>
+<text x="221.0" y="206.0" text-anchor="middle" class="small">Отобразить остатки</text>
+
+<line x1="125" y1="260" x2="537" y2="260" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="331.0" y="256.0" text-anchor="middle" class="small">Создать заказ</text>
+
+<line x1="537" y1="300" x2="765" y2="300" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="651.0" y="296.0" text-anchor="middle" class="small">Сформировать заказ</text>
+
+<line x1="765" y1="340" x2="1005" y2="340" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="885.0" y="336.0" text-anchor="middle" class="small">Сохранить</text>
+
+<line x1="537" y1="430" x2="1190" y2="430" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="863.5" y="426.0" text-anchor="middle" class="small">Распечатать заказ</text>
+
+<line x1="1190" y1="480" x2="125" y2="480" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)" class="dash"/>
+<text x="657.5" y="476.0" text-anchor="middle" class="small">Печатная форма готова</text>
+
+</svg>
